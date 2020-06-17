@@ -138,3 +138,5 @@ Ajakaye Ayobami -@Ajakaye.ayobami
 Sanusi Hamed Tijani - @tsc
 Ashiru Mujeedah -@Mujeedah
 Samuel Abah - @Technelly
+Daniel Oladimeji - @dimmycodes
+
