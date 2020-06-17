@@ -10,12 +10,13 @@ Ali Abdul -@aliaba
 Adebisi Oreoluwa -@Oreoluwa19
 Olayiwola Ololade -@lolade
 Zahradeen Muazu -@zahradeen
+<<<<<<< HEAD
 Victor Nonso Okeke -@VictorNonso
 Olusegun Adeyeye - @shegzzz
 kolade Victor-@shola
 Tobi Faniran-@kunmi
 Olajide Ibukunoluwa Temitope - @Temi
-Zahradeen Muazu -@zahradeen 
+Zahradeen Muazu -@zahradeen
 Zahradeen Muazu -@zahradeen
 Favour Oluwanifemi - @Neefemee1
 Tofunmi Osho - @Osho
@@ -24,7 +25,7 @@ Eke John Igwe - @johnny
 precious oluwanifemi - @Preciousniphemi
 Victor Nonso Okeke -@VictorNonso
 Brian Okanga -@kangarian
-Zahradeen Muazu -@zahradeen 
+Zahradeen Muazu -@zahradeen
 Alade-Raji Far'hah - @Reehah
 Emmanuel Itakpe -@NoeL
 Adebayo Mubarak Olabode -@Olabode2020
@@ -101,7 +102,7 @@ Adetunji Adedoyin -@dyn4casie
 Victory Ndukwu _ @Victory
 Farinde David - @Youngdavid45
 Oluwakanyinsola Sowemimo - @Kanyincode
-
+Yinka Akinnukawe - @tariy
 
 
 
@@ -147,7 +148,7 @@ Akinade Boluwatife - @Bamiboy
 God's delight Iworima - @delight
 
 Ebirika Ugochukwu -@killmoovez
-Emmanuel Amodu-@aguythatcodes 
+Emmanuel Amodu-@aguythatcodes
 Oluwaseun Olu-Young - @fishouttawater
 Ikenna Okolo - @iykecode
 Onifade Anjolaoluwa - @oppai_enu
@@ -236,3 +237,6 @@ Daniel Oladimeji - @dimmycodes
 
 
 Godfred Dari - @Teedari
+=======
+Yinka Akinnukawe-@tariy
+>>>>>>> 40d0af21149f89570e3900e203a712beacf1654e
