@@ -1,9 +1,8 @@
 # Team-Microapi
-CLONE THE REPO AND ADD YOUR NAME TO THE CONTRIBUTIONS.TXT FILE... ELSE IT WON'T COUNT PLEASE... 
-
 
 ![Node.js CI](https://github.com/hngi/Team-Incredible-BE/workflows/Node.js%20CI/badge.svg?branch=develop)
 
+-   ## Contribute 🕸 Clone the development branch and get to work
 -   [Overview :notebook_with_decorative_cover:](#overview-notebook_with_decorative_cover)
 -   [Installation and running server (Development) :gear:](#installation-and-running-server-gear)
 -   [API :cloud_with_lightning:](#api-cloud_with_lightning)
