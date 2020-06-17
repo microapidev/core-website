@@ -20,8 +20,10 @@ oigiangbe kelvin-@kelvin-patch-6
 Banji Olusegun Kolawole -@Swgun
 Isaiah Akojenu - @skelo94
 oigiangbe kelvin-@kelvin-patch-1
-Ighogboja Odiri - @odizee
+Ighogboja Odiri - @odizee-patch-1
 Callistus Enekhaze -@Osi-patch-1
 Chibuzor Christain @Christian
+Callistus Enekhaze -@Osi
+Isaiah Abiodun @Abisalde
 Kenechi Okey -@kenechi
 Agbaje Silas -@Silas
