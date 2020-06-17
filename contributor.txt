@@ -7,7 +7,6 @@ Brian Okanga -@kangarian
 Zahradeen Muazu -@zahradeen
 sambalicious -@sambalicious
 Ayoade Ibrahim - @Ohye
-Jakpor Garry  -@Garry Jay
 Umakhihe Oluwashola -@jayumaks
 Jegede David-@jegedeDavid
 Okputu Emmanuel Okputu -@immanuelredd
@@ -17,4 +16,4 @@ KANKANALA YAMINI- @YAMINI
 oigiangbe kelvin-@kelvin-patch-1
 Ighogboja Odiri - @odizee
 Callistus Enekhaze -@Osi
-
+Chibuzor Christain @Christian
