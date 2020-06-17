@@ -13,7 +13,6 @@ Adebayo Mubarak Olabode -@Olabode2020
 
 sambalicious -@sambalicious
 Ayoade Ibrahim - @Ohye
-Jakpor Garry  -@Garry Jay
 Umakhihe Oluwashola -@jayumaks
 Jegede David-@jegedeDavid
 Okputu Emmanuel Okputu -@immanuelredd
@@ -24,7 +23,9 @@ oigiangbe kelvin-@kelvin-patch-6
 Banji Olusegun Kolawole -@Swgun
 Isaiah Akojenu - @skelo94
 oigiangbe kelvin-@kelvin-patch-1
-Ighogboja Odiri - @odizee
+Ighogboja Odiri - @odizee-patch-1
+Callistus Enekhaze -@Osi-patch-1
+Chibuzor Christain @Christian
 Callistus Enekhaze -@Osi
 Kenechi Okey -@kenechi
 
