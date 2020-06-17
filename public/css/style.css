@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Poppins-Semibold';
+    src: url(/font/Poppins-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(/font/Poppins-Regular.ttf);
+}
+
+
+.alert {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9999;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1rem 10rem;
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  }
+  .alert--success {
+    background-color: #00ff00;
+  }
+  .alert--error {
+    background-color: #eb4d4b;
+  }
+#head-text{
+    margin-top: 50px;
+    font-family: 'Poppins-Semibold';
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#dash{
+    height: 5px;
+    width: 64px;
+    display: inline-block;
+    margin-top: 19px;
+    margin-right: 20px;
+    background-color: #31AA52;
+}
+
+#googlebtn{
+color: white;
+    background-color: #FF2929;
+    width: 268px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+#googlediv{
+margin-top: 30px;
+}
+
+#googlebtn-text{
+    font-family: 'Poppins-Regular';
+    font-size: 18px;
+}
+
+#google-img{
+    margin-right: 10px;
+}
+
+.grey-dash{
+    height: 2px;
+    margin-top: 12px;
+    width: 269px;
+    background-color: #EBEBEB;
+}
+
+#or-row{
+    margin-top: 40px;
+display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#or-text{
+    font-family: 'Poppins-Semibold';
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+label{
+    font-family: 'Poppins-Regular';
+    font-size: 24px;
+    font-weight: 200;
+}
+
+#login-form{
+    margin-top: 20px;
+    width: 100%;
+}
+
+#forgot{
+    font-family: 'Poppins-Semibold';
+    font-size: 18px;
+}
+
+.input-boxes{
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    outline-color: #2b542c;
+    border-top-width: 1px;
+    border-top-color: #B8B8B8;
+    border-bottom-width: 1px;
+    border-bottom-color: #B8B8B8;
+    border-left-width: 1px;
+    border-left-color: #B8B8B8;
+    border-right-width: 1px;
+    border-right-color: #B8B8B8;
+    font-size: 25px;
+}
+
+#password-box{
+    background: url("/img/eye.png") no-repeat scroll 510px 7px;
+}
+
+#input-div-top{
+margin-top: 40px;
+}
+
+#input-div-bottom{
+margin-top: 40px;
+}
+
+/* #image-div{
+
+} */
+
+#form-half{
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-right: 70px;
+    /*background-color: #0d3349;*/
+}
+
+.form-half-item{
+    align-self: center;
+    min-height: 20px;
+    min-width: 100px;
+    margin: 10px;
+    /*background-color: blueviolet;*/
+}
+
+#row-text{
+    width: 100%;
+}
+
+#form-div{
+    width: 100%;
+}
+
+#forgot-div{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: flex-end;
+}
+
+
+#submit-btn{
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins-Semibold';
+    font-size: 24px;
+    color: white;
+    background-color: #31AA52;
+}
+
+#no-account-text{
+    font-family: 'Poppins-Semibold';
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+/* 
+#signup-text{
+    /*color: #31AA52;*/
+*/
+.sucus{
+    padding:0.77rem;
+    background-color: #03851f;
+    margin: auto;
+    margin: 1rem;
+}
+#signup-text > a{
+    color: #31AA52;
+    text-decoration: none;
+}
+
+/* success message kukere */
