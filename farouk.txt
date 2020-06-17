@@ -1,2 +1,0 @@
-name: farouk afolabi 
-slackid: @farouk
