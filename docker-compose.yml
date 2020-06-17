@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  microservice:
+    image: node:latest
+    volumes:
+      - nodemodules:/usr/src/service/node_modules
+      - .:/usr/src/service
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    working_dir: /usr/src/service
+    command: npm run dev
+    ports:
+      - 8001:3000
+      - 8080:3000
+      - 8200:3000
+
+volumes:
+  nodemodules:
+    external: true

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <%- include('../template/head') %>
+</head>
+
+<body>
+    <header>
+        <%- include('../template/header') %>
+    </header>
+
+    <!-- @JoshDev -->
+    <div class="container1">
+        <div class="head-color">
+            <h2 class="head-text">About MicroAPI</h2>
+            <img class="head-img"
+                src="https://res.cloudinary.com/josh4324/image/upload/v1591745179/people-sitting-beside-brown-wooden-desk-near-flat-screen-tv-1181355_1_s8f6ms.png"
+                alt="">
+        </div>
+        <div class="section1">
+            <h2 class="text-center sec1-h2">Who we are</h2>
+            <span class="hr"></span>
+            <p class="sec1-text text-center">
+                We are a fast-paced team dedicated to delivering fast and scalable solutions to solve large and complex
+                business problems and increase productivity for your company.
+            </p>
+        </div>
+        <div class="section2">
+            <h2 class="text-center sec2-h2">What we do</h2>
+            <span class="hr"></span>
+            <p class="sec1-text text-center">We provide lightweight, easy-to-use and scalable microservices that can be
+                easily plugged into your application.</p>
+        </div>
+
+    </div>
+
+    <!-- @fosajeff -->
+    <div class="micro-service-desc">
+        <div class="container">
+            <div class="about-us__wrapper">
+                <div class="img-2">
+                    <img src="https://res.cloudinary.com/oluwatobiloba/image/upload/v1591804664/incredible%20project/managing-users-2_boppmm.png"
+                        alt="">
+                </div>
+                <div class="mg-r img-1">
+                    <img src="https://res.cloudinary.com/moh-x/image/upload/c_fill,h_324,w_261/v1592041111/hngi7/team-incredible/AboutPage/user2i_mv0ony.jpg"
+                        alt="">
+                </div>
+                <div class="story-sect">
+
+                    <p class="desc">Dockerized Micro Service For Managing Users</p>
+                    <p class="content">
+                        By using our user management service, managing your application users becomes easier and
+                        requires less effort.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- @sahmie and @onshimiye authentication section start----  -->
+
+    <div class="micro-service-desc">
+        <div class="container">
+            <div class="about-us__wrapper">
+
+                <div class="sect-2 story-sect mg-r">
+
+                    <p class="desc">Dockerized Micro Service For Authentication</p>
+                    <p class="content">
+                        Our Service will give you access to all your authentication needs such as login, logout,
+                        reset
+                        password and social media login.
+                    </p>
+                </div>
+                <div class="img-1">
+                    <img src="https://res.cloudinary.com/moh-x/image/upload/c_fill,h_324,w_261/v1592040695/hngi7/team-incredible/AboutPage/authentication1_qomtjz.jpg"
+                        alt="">
+                </div>
+                <div class="img-2">
+                    <img src="https://res.cloudinary.com/moh-x/image/upload/c_fill,h_370,w_355/v1592051711/hngi7/team-incredible/AboutPage/Authentication2_mtitq9.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- @sahmie and @onshimiye authentication section end  -->
+
+    <!-- @Aduramimo and @miguel section-->
+    <div class="micro-service-desc">
+        <div class="container">
+            <div class="about-us__wrapper">
+                <div class="img-2">
+                    <img src="https://res.cloudinary.com/moh-x/image/upload/c_fill,h_370,w_355/v1592040712/hngi7/team-incredible/AboutPage/setting2_nhluaa.jpg"
+                        alt="">
+                </div>
+                <div class="img-1  mg-r">
+                    <img src="https://res.cloudinary.com/moh-x/image/upload/c_scale,h_310,w_261/v1592040713/hngi7/team-incredible/AboutPage/setting1_kk5qxv.jpg"
+                        alt="">
+                </div>
+                <div class="story-sect">
+                    <p class="desc">Dockerized Micro-Service for Managing Company Settings</p>
+                    <p class="content">
+                        Our Service can help you with setting up a company with features such as set company name,
+                        add or delete company.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- @Aduramimo and @miguel section end-->
+
+    <div class="micro-service-desc">
+        <div class="container">
+            <div class="about-us__wrapper">
+
+                <div class="sect-2 story-sect mg-r">
+
+                    <p class="desc">Dockerized micro-service for
+                        sending email notifications</p>
+                    <p class="content">
+                        Worry less about setting up email services.
+                        With our email microservice, setting up
+                        emails for your company becomes easier
+                        and more interesting with our custom
+                        templates.
+                    </p>
+                </div>
+
+                <div class="img-1">
+                    <img src="https://res.cloudinary.com/moh-x/image/upload/c_fill,h_324,w_261/v1592040700/hngi7/team-incredible/AboutPage/email3_fx2d9z.jpg"
+                        alt="">
+                </div>
+                <div class="img-2">
+                    <img src="https://res.cloudinary.com/moh-x/image/upload/c_fill,h_370,w_355/v1592040711/hngi7/team-incredible/AboutPage/email2_zt0l44.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="amplified">
+        <p>Get Amplified Now</p>
+        <div class="action">
+            <%if(isAuthenticated) { %>
+            <a href="/dashboard" class="btn btn-main">Get Started</a>
+            <% } else { %>
+            <a href="/register" class="btn btn-main"> Register </a>
+            <a href="/login" class="btn btn-main btn-main--outline">Log In</a>
+            <% } %>
+        </div>
+    </div>
+
+    <footer>
+        <%- include('../template/footer') %>
+    </footer>
+</body>
