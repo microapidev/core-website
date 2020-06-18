@@ -13,20 +13,18 @@
     <!-- @olanetsoft -->
 
     <div class="login-form-container">
+
+
         <div class="login-container">
-            <div class="google-login-btn">
-                <img class="login-icon"
-                    src="https://res.cloudinary.com/oluwatobiloba/image/upload/v1591804664/incredible%20project/giigke_t85qnf.png" />
-                <button class="google-btn">
-                    <a href='/googleauth'>
-                        Login with Google
-                    </a>
-                </button>
-            </div>
+
+          <div class="social-login-container">
+              <a href="/facebook" class="button" role="button"><i class="fab social-icon fa-facebook fa-3x"></i></a>
+              <a href="/github" class="button" role="button"><i class="fab social-icon fa-github fa-3x"></i></a>
+              <a href="/google" class="button" role="button"><i class="fab social-icon fa-google-plus fa-3x"></i></a>
+          </div>
+
             <div class="or">
-                <hr />
-                <span>OR</span>
-                <hr />
+                <p>or sign in with your email </p>
             </div>
             <div class="form">
                 <%if (typeof msg !== 'undefined' && typeof msg == 'string') { %>
@@ -39,23 +37,22 @@
                     <%if (typeof error !== 'undefined' && typeof error.response === 'string') { %>
                     <div class='login-error-response' style="text-align: center;"><%= error.response %></div>
                     <% } %>
-                    <label for="email">Email</label>
+
                     <%if (typeof error !== 'undefined' && typeof error === 'object') { %>
                     <div class='login-error'><%= error.response.email %></div>
                     <% } %>
-                    <input class="login-input" type="email" placeholder="Email address" id="email" name="email"
+                    <input class="login-input" type="email" placeholder=" &#xf2bd; Username"  id="email" name="email"
                         required />
-                    <label for="password">Password</label>
+
                     <%if (typeof error !== 'undefined' && typeof error === 'object') { %>
                     <div class='login-error'><%= error.response.password %></div>
                     <% } %>
-                    <input class="login-input" type="password" placeholder="Password" id="password" name="password"
+                    <input class="login-input" type="password" placeholder="&#xf023; Password" id="password" name="password"
                         required />
                     <a class="form-link forgot-password" href="/forgot-password">Forgot Password?</a>
                     <br>
                     <button class="login-btn" type="submit">Login</button>
-                    <p class="form-link">Don't have an account? <a class="form-link" href="/register">Click to
-                            Register</a></p>
+                    <p class="form-link">Don't have an account? <a class="form-link" href="/register">Sign Up</a></p>
                 </form>
             </div>
         </div>
