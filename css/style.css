@@ -1,0 +1,187 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.contain{
+    width: 100%;
+    position: relative;
+}
+.section4{
+    text-align: center;
+}
+.sub-section{
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-top: 40px;
+}
+.books{
+     width: 120px;
+     height: 120px;
+     border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    left: 52px;
+}
+.book i{
+    font-size: 70px;
+    position: absolute;
+    top: 23px;
+    left: 28px;
+}
+.book h3{
+    position: absolute;
+    top: 140px;
+    left: 60px;
+}
+.book p{
+    position: absolute;
+    top: 190px;
+}
+.builds{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    left: 302px;
+}
+.builds i{
+    font-size: 70px;
+    position: absolute;
+    top: 23px;
+    left: 28px;
+}
+.build h3{
+    position: absolute;
+    top: 140px;
+    left: 330px;
+}
+.build p{
+     position: absolute;
+     top: 190px;
+     left: 250px;
+}
+.documents{
+     width: 120px;
+     height: 120px;
+     border-radius: 50%;
+     border: 1px solid black;
+     position: absolute;
+     left: 562px;
+}
+.documents i{
+     font-size: 70px;
+     position: absolute;
+     top: 23px;
+     left: 28px;
+     
+}
+.document h3{
+    position: absolute;
+    top: 140px;
+    left: 550px;
+}
+.document p{
+     position: absolute;
+     top: 190px;
+     left: 510px;
+}
+.standardizes{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    left: 802px;
+}
+.standardizes i{
+    font-size: 70px;
+    position: absolute;
+    top: 23px;
+    left: 25px;
+}
+.standardize h3{
+    position: absolute;
+    top: 140px;
+    left: 790px;
+}
+.standardize p{
+    position: absolute;
+    top: 190px;
+    left: 760px;
+}
+.texts{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    left: 1038px;
+}
+.texts i{
+    font-size: 70px;
+    position: absolute;
+    top: 26px;
+    left: 28px;
+}
+.text h3{
+    position: absolute;
+    top: 140px;
+    left: 1077px;
+}
+.text p{
+    position: absolute;
+    top: 190px;
+    left: 1020px;
+}
+.main{
+    position: absolute;
+    top: 500px;
+    width: 100%;
+}
+.group{
+    padding: 40px;
+}
+.img{
+    position: absolute;
+    right: 22%;
+    top: 0px;
+    margin-bottom: 80px;
+}
+.word{
+    background-color: whitesmoke;
+    width: 52%;
+    position: relative;
+    left: 5%;
+    top: 70px;
+}
+.word h1{
+    font-weight: 500;
+    font-size: 35px;
+    color: rgb(49, 4, 49);
+}
+.word p{
+    margin-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    width: 171.6%;
+    height: 70vh;
+}
+.arrow{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(49, 4, 49);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    position: absolute;
+    left: 700px;
+    cursor: pointer;
+}
