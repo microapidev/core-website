@@ -1,0 +1,26 @@
+.product-holder {
+    position: absolute;
+    color: white;
+    left: 50%;
+    right: 50%;
+    top: 30%;
+    margin-top: -25px;
+    margin-left: -40px;
+    height: 150px;
+    width: 50px;
+}
+
+.plus-image {
+    left: 50%;
+    right: 50%;
+    top: 30%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+    height: 150px;
+    width: 50px;
+    color: white;
+}
+.card{
+	background-color: rgba(0, 16, 37, 0.1) !important;
+}
