@@ -1,6 +1,20 @@
 /* @Tobecci & @Olanetsoft */
 
+.social-icon{
+  margin: 20px 10px;
 
+
+}
+.fa-facebook:hover{
+  color:blue;
+}
+.fa-google-plus:hover{
+  color:red;
+}
+
+.fa-github:hover{
+  color:grey;
+}
 .login-form-container {
     width: 100%;
     display: flex;
@@ -61,6 +75,21 @@
     align-items: center;
     padding: 10px 0;
 }
+.button {
+  text-decoration: none;
+  color: #333333;
+}
+
+.or p {
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+color: #31AA52;
+}
 
 .or hr {
     width: 35%;
@@ -107,6 +136,7 @@
     height: 48px;
     margin: 0 auto 25px auto;
     width: 80%;
+    font-family: Helvetica, 'FontAwesome', sans-serif;
 }
 
 .login-btn {
@@ -357,4 +387,5 @@
     .form-link {
         font-size: 14px;
     }
+
 }
