@@ -1,0 +1,12 @@
+/* Screen from  */
+@media only screen and (max-width: 974px) {
+    .intro {
+        display: none;
+    }
+    .signup {
+        width: 100%;
+    }
+    #signup_logo span {
+        display: block;
+    }
+}
