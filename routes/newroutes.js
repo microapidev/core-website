@@ -14,12 +14,12 @@ appRoute.get('/about', user.isAuthenticated, (req, res) => {
 
 
 appRoute.get('/register', user.isAuthenticated, (req, res) => {
-  res.render('Pages/Register');
+  res.render('register');
 });
 
 appRoute.get('/login', user.isAuthenticated, (req, res) => {
   const { successMsg } = req.query;
-  res.render('Pages/Login', {
+  res.render('Login', {
     successMsg,
   });
 });
