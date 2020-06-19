@@ -1,0 +1,399 @@
+--- 
+ doe: "a deer, a female deer"
+ ray: "a drop of golden sun"
+ pi: 3.14159
+ xmas: true
+ french-hens: 3
+ calling-birds: 
+   - huey
+   - dewey
+   - louie
+   - fred
+ xmas-fifth-day: 
+   calling-birds: four
+   french-hens: 3
+   golden-rings: 5
+   partridges: 
+     count: 1
+     location: "a pear tree"
+   turtle-doves: two
+The file starts with three dashes. These dashes indicate the start of a new YAML document. YAML supports multiple documents, and compliant parsers will recognize each set of dashes as the beginning of a new one.
+
+Next, we see the construct that makes up most of a typical YAML document: a key-value pair. Doe is a key that points to a string value: a deer, a female deer.
+
+YAML supports more than just string values. The file starts with six key-value pairs. They have four different data types. Doe and ray are strings. Pi is a floating-point number. Xmas is a boolean. French-hens is an integer. You can enclose strings in single or double-quotes or no quotes at all. YAML recognizes unquoted numerals as integers or floating point.
+
+The seventh item is an array. Calling-birds has four elements, each denoted by an opening dash.
+
+I indented the elements in calling-birds with two spaces. Indentation is how YAML denotes nesting. The number of spaces can vary from file to file, but tabs are not allowed. We’ll look at how indentation works below.
+
+Finally, we see xmas-fifth-day, which has five more elements inside it, each of them indented. We can view xmas-fifth-day as a dictionary that contains two string, two integers, and another dictionary. YAML supports nesting of key-values, and mixing types.
+
+Before we take a deeper dive, let’s look at how this document looks in JSON. I’ll throw it in this handy JSON to YAML converter.
+
+{
+  "doe": "a deer, a female deer",
+  "ray": "a drop of golden sun",
+  "pi": 3.14159,
+  "xmas": true,
+  "french-hens": 3,
+  "calling-birds": [
+     "huey",
+     "dewey",
+     "louie",
+     "fred"
+  ],
+  "xmas-fifth-day": {
+  "calling-birds": "four",
+  "french-hens": 3,
+  "golden-rings": 5,
+  "partridges": {
+    "count": 1,
+    "location": "a pear tree"
+  },
+  "turtle-doves": "two"
+  }
+}
+JSON and YAML have similar capabilities, and you can convert most documents between the formats.
+
+Outline Indentation and Whitespace
+Whitespace is part of YAML’s formatting. Unless otherwise indicated, newlines indicate the end of a field.
+
+You structure a YAML document with indentation. The indentation level can be one or more spaces. The specification forbids tabs because tools treat them differently.
+
+Consider this document. The items inside stuff are indented with two spaces.
+
+foo: bar
+     pleh: help
+     stuff:
+       foo: bar
+       bar: foo
+Let’s take a look at how a simple python script views this document. We’ll save it as a file named foo.yaml.
+
+The PyYAML package will map a YAML file stream into a dictionary. We’ll iterate through the outermost set of keys and values and print the key and the string representation of each value. You can find a processor for your favorite platform here.
+
+import yaml
+
+if __name__ == '__main__':
+
+    stream = open("foo.yaml", 'r')
+    dictionary = yaml.load(stream)
+    for key, value in dictionary.items():
+        print (key + " : " + str(value))
+The output is:
+
+foo : bar
+pleh : help
+stuff : {'foo': 'bar', 'bar': 'foo'}
+When we tell python to print a dictionary as a string, it uses the inline syntax we’ll see below. We can see from the output that our document is a python dictionary with two strings and another dictionary nested inside it.
+
+YAML’s simple nesting gives us the power to build sophisticated objects. But that’s only the beginning.
+
+Comments
+Comments begin with a pound sign. They can appear after a document value or take up an entire line.
+
+___
+# This is a full line comment
+foo: bar # this is a comment, too
+Comments are for humans. YAML processors will discard them.
+
+YAML Datatypes
+Values in YAML’s key-value pairs are scalar. They act like the scalar types in languages like Perl, Javascript, and Python. It’s usually good enough to enclose strings in quotes, leave numbers unquoted, and let the parser figure it out.
+
+But that’s only the tip of the iceberg. YAML is capable of a great deal more.
+
+Key-Value Pairs and Dictionaries
+The key-value is YAML’s basic building block. Every item in a YAML document is a member of at least one dictionary. The key is always a string. The value is a scalar so that it can be any datatype.
+
+So, as we’ve already seen, the value can be a string, a number, or another dictionary.
+
+Numeric types
+YAML recognizes numeric types. We saw floating point and integers above. YAML supports several other numeric types.
+
+An integer can be decimal, hexidecimal, or octal.
+
+---
+ foo: 12345
+ bar: 0x12d4
+ plop: 023332
+Let’s run our python script on this document.
+
+foo : 12345
+ bar : 4820
+ plop : 9946
+As you expect, Ox indicates a value is hex, and a leading zero denotes an octal value.
+
+YAML supports both fixed and exponential floating point numbers.
+
+---
+ foo: 1230.15
+ bar:  12.3015e+05
+When we evaluate these entries we see:
+
+foo : 1230.15
+ bar : 1230150.0
+Finally, we can represent not-a-number (NAN) or infinity.
+
+---
+foo: .inf
+bar: -.Inf
+plop: .NAN
+Foo is infinity. Bar is negative infinity, and plop is NAN.
+
+Strings
+YAML strings are Unicode. In most situations, you don’t have to specify them in quotes.
+
+---
+foo: this is a normal string
+Our test program processes this as:
+
+foo: this is a normal string
+But if we want escape sequences handled, we need to use double quotes.
+
+---
+foo: "this is not a normal string\n"
+bar: this is not a normal string\n
+YAML processes the first value as ending with a carriage return and linefeed. Since the second value is not quoted, YAML treats the \n as two characters.
+
+foo: this is not a normal string
+bar : this is not a normal string\n
+YAML will not escape strings with single quotes, but the single quotes do avoid having string contents interpreted as document formatting.
+
+String values can span more than one line. With the fold (greater than) character, you can specify a string in a block.
+
+bar: >
+  this is not a normal string it
+  spans more than
+  one line
+  see?
+But it’s interpreted without the newlines.
+
+bar : this is not a normal string it spans more than one line see?
+The block (pipe) character has a similar function, but YAML interprets the field exactly as is.
+
+bar: |
+  this is not a normal string it
+  spans more than
+  one line
+  see?
+So, we see the newlines where they are in the document.
+
+bar : this is not a normal string it
+spans more than
+one line
+see?
+Nulls
+You enter nulls with a tilde or the unquoted null string literal.
+
+---
+foo: ~
+bar: null
+Our program prints:
+
+foo : None
+bar : None
+Python’s representation for null is None.
+
+Booleans
+YAML indicates boolean values with the keywords True, On and Yes for true. False is indicated with False, Off, or No.
+
+---
+foo: True
+bar: False
+light: On
+TV: Off
+Arrays
+You can specify arrays or lists on a single line.
+
+---
+items: [ 1, 2, 3, 4, 5 ]
+names: [ "one", "two", "three", "four" ]
+Or, you can put them on multiple lines.
+
+---
+items:
+  - 1 
+  - 2 
+  - 3
+  - 4 
+  - 5 
+names:
+  - "one"
+  - "two"
+  - "three"
+  - "four"
+The multiple line format is useful for lists that contain complex objects instead of scalars.
+
+___
+items:
+  - things:
+      thing1: huey
+      things2: dewey
+      thing3: louie
+  - other things:
+      key: value
+An array can contain any valid YAML value. The values in a list do not have to be the same type.
+
+Dictionaries
+We covered dictionaries above, but there’s more to them.
+
+Like arrays, you can put dictionaries inline. We saw this format above. It’s how python prints dictionaries.
+
+---
+foo: { thing1: huey, thing2: louie, thing3: dewey }
+We’ve seen them span lines before.
+
+---
+foo: bar
+bar: foo
+And, of course, they can be nested and hold any value.
+
+---
+foo:
+  bar:
+    - bar
+    - rab
+    - plop
+Advanced Options
+Chomp Modifiers
+Multiline values may end with whitespace, and depending on how you want the document to be processed you might not want to preserve it. YAML has the strip chomp and preserve chomp operators.
+
+To save the last character, add a plus to the fold or block operators.
+
+bar: >+
+  this is not a normal string it
+  spans more than
+  one line
+  see?
+So, if the value ends with whitespace, like a newline, YAML will preserve it.
+
+To strip the character, use the strip operator.
+
+bar: |-
+  this is not a normal string it
+  spans more than
+  one line
+  see?
+Multiple documents
+A document starts with three dashes and ends with three periods. Some YAML processors require the document start operator. The end operator is usually optional. For example, Java’s Jackson will not process a YAML document without the start, but Python’s PyYAML will.
+
+You’ll usually use the end document operator when a file contains multiple documents.
+
+Let’s modify our python code.
+
+import yaml
+
+if __name__ == '__main__':
+    stream = open("foo.yaml", 'r')
+    dictionary = yaml.load_all(stream)
+
+    for doc in dictionary:
+        print("New document:")
+        for key, value in doc.items():
+            print(key + " : " + str(value))
+            if type(value) is list:
+                print(str(len(value)))
+PyYAML’s load_all will process all of the documents in a stream.
+
+Now, let’s process a compound document with it.
+
+---
+bar: foo
+foo: bar
+...
+---
+one: two
+three: four
+The script finds two YAML documents.
+
+New document:
+bar : foo
+foo : bar
+New document:
+one : two
+three : four
+Conclusion
+YAML is a powerful language that can be used for configuration files, messages between applications, and saving application state. We covered its most commonly used features, including how to use the built-in datatypes and structure complex documents. Some platforms support YAML’s advanced features, including custom datatypes.
+
+ Eric Goebelbecker
+ERIC GOEBELBECKER
+Contributing Author
+Eric has worked in the financial markets in New York City for 25 years, developing infrastructure for market data and financial information exchange (FIX) protocol networks. He loves to talk about what makes teams effective (or not so effective!)
+
+Share this post with friends!
+Click to share on Twitter (Opens in new window)Click to share on Facebook (Opens in new window)Click to share on LinkedIn (Opens in new window)Click to share on Reddit (Opens in new window)Click to share on Pocket (Opens in new window)
+Related Content
+Creating Configuration Objects in Ruby
+There are many kinds of applications and many ways to manage how they behave or perform via configurations. Software is designed with default behavior built in, so some specific configuration is usually required before the software works (like a path to reach a dependency), or a default and possibly rudimentary…
+
+October 24, 2017
+
+In "Development"
+
+Building Docker Images Using Codeship Pro and Packer
+Building Docker Images Using Codeship Pro and Packer
+January 17, 2017
+
+In "Development"
+
+Building Cloud Apps with Civo and Docker Part V: Managing State
+Building Cloud Apps with Civo and Docker Part V: Managing State
+June 21, 2018
+
+In "Development"
+
+Filed Under: Blog
+Git Revert Commit: Everything to Know About Going Back
+June 17, 2020 By kileynichols 0 Comments
+
+The following is a guest post written by Carlos Schults. Going back in time is a crucial feature in any VCS. Git is no exception, but being more powerful and flexible than its centralized competitors, it can be somewhat confusing for beginners. Today, we’re here to help people looking to understand what “git revert commit” […]
+
+The Advantages of Flags-As-Code
+June 5, 2020 By dgiordano 0 Comments
+
+As organizations are speeding up and scaling their software development to match the needs of the modern consumer, they are focused on doing so without losing visibility, traceability, and auditability. These are things, that while slower and more cumbersome, had previously helped prevent bugs and problems from becoming prevalent in software projects. Developing things “-as-code” […]
+
+
+Use Feature Flags to Drive Innovation Without Increasing Risk in Financial Services
+June 5, 2020 By dgiordano 0 Comments
+
+As you’re aware, speed of software development is critical in the financial services sector, but you have an added level of risk and complexity in your users’ data that many industries don’t have. The margin for error is very slim, and yet the systems are growing increasingly complex as modern banking moves more and more […]
+
+Feature Flipper (Or Toggle): What Is It and Why Use It?
+May 26, 2020 By kileynichols 0 Comments
+
+The following is a guest blog post written by Marjan Venema. You hit the button to confirm the last merge pull request for the day and slowly lean back in your chair. This is it. Tomorrow the new release hits every customer. Everybody on the development team has done their utmost to make it good, […]
+
+
+How to Disable Code: The Developer’s Production Kill Switch
+May 14, 2020 By kileynichols 0 Comments
+
+The following is a guest post written by Carlos Schults. Being able to disable code in production is a power that many developers aren’t aware of. And that’s a shame. The ability to switch off some portions—or even complete features—of the codebase can dramatically improve the software development process by allowing best practices that can […]
+
+
+Primary Sidebar
+Join over 100,000 Developers and DevOps professionals for a once a week newsletter!
+Email
+Enter Your Email
+Latest Reads
+Git Revert Commit: Everything to Know About Going Back
+Git Revert Commit: Everything to Know About Going Back
+June 17, 2020
+The Advantages of Flags-As-Code
+The Advantages of Flags-As-Code
+June 5, 2020
+Use Feature Flags to Drive Innovation Without Increasing Risk in Financial Services
+Use Feature Flags to Drive Innovation Without Increasing Risk in Financial Services
+June 5, 2020
+Feature Flipper (Or Toggle): What Is It and Why Use It?
+Feature Flipper (Or Toggle): What Is It and Why Use It?
+May 26, 2020
+How to Disable Code: The Developer’s Production Kill Switch
+How to Disable Code: The Developer’s Production Kill Switch
+May 14, 2020
+
+Progressively Deliver Every Release using the Feature Flag Platform Built for Engineers in the Enterprise.
+Get Started Today
+COPYRIGHT © 2020
+
+
