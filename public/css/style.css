@@ -1,142 +1,115 @@
-/* Import Variables */
-@import url(..views/partials/_variable.css);
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+.first{
+  margin-left:50px;
+  margin-right: 120px;
 }
-body {
-  font-family: "Roboto", sans-serif;
-}
-.container {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-}
-.logo span {
-  font-size: 20px;
-  font-family: "Offside", cursive;
-  color: #fff;
-}
-/* INTRO AREA */
-.intro {
-  color: #fff;
-  width: 35%;
-  background: var(--primary-color);
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  display: grid;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 30px;
-}
-#intro_logo {
-  position: absolute;
-  top: 3%;
-  left: 2%;
-}
-.intro h1 {
-  font-family: "Offside", cursive;
-  font-style: normal;
-  font-weight: normal;
-  margin-bottom: 40px;
-  font-size: 42px;
-}
-.intro p {
-  font-style: normal;
-  font-size: 25px;
+.second1{
+  background:black;
 }
 
-/* SIGNUP AREA */
-.signup {
-  width: 65%;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
+
+.second{
+  background: #58BF8E
 }
-#signup_logo span {
-  display: none;
-  color: var(--primary-color);
+
+.img1{
+  margin-left: 30px;
 }
-.heading {
-  margin-bottom: 20px;
+
+.four{
+  background-image: url(./Vector\ \(8\).png) right !important;
 }
-.heading h2 {
-  font-family: "Offside", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 81px;
-  color: var(--primary-color);
+#one{
+  background: url(./Vector\ \(8\).png) right no-repeat;
+  background-color: white ;
+  background-position-x: 150px;
+  padding: 5px 5px;
+  
 }
-.heading_social img {
-  width: 40px;
-  height: 40px;
-  margin: 0 15px;
+.five{
+  font-size: 100px !important;
 }
-.heading p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 42px;
-  color: var(--primary-color);
+a:hover{
+  border-bottom: 2px solid white !important;
 }
-.signup-area {
-  display: grid;
-  grid-gap: 20px;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
+
+
+
+@media(max-width:375px){
+  .first{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .img1{
+      margin-left: 10px;
+  }
 }
-.input_field {
-  background: rgba(231, 231, 231, 0.4);
-  border-radius: 15px;
-  width: 400px;
-  text-align: left;
-  padding: 6px 8px;
+
+
+
+@media(min-width:376px) and (max-width:500px){
+  .first{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
 }
-.input_field img {
-  width: 14px;
-  height: 14px;
-  margin-right: 4px;
-  vertical-align: middle;
+
+
+@media(min-width:501px) and (max-width:768px){
+  .first{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
 }
-.input_field input {
-  width: 90%;
-  padding: 10px 0;
-  font-size: 20px;
-  background-color: transparent;
-  border: none;
-  vertical-align: middle;
+
+@media(min-width:769px) and (max-width:1200px){
+  .first{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
 }
-.input_field input::placeholder {
-  color: var(--primary-color2);
+section {
+  padding: 5%;
 }
-.btn {
-  font-size: 20px;
-  text-transform: uppercase;
-  color: var(--primary-color);
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid var(--primary-color);
-  border-radius: 50px;
-  padding: 18px 50px;
-  cursor: pointer;
+.info-box{
+  border: 1px solid rgb(223, 222, 222);
+  padding: 2%;
+  margin: 10px 10px;
+  background-color: white;
 }
-.signup-area_extra p {
-  font-size: 20px;
-  font-weight: normal;
+.user-settings {
+  position: relative;
+  display: inline-block;
+  left: 80%;
 }
-.signup-area_extra a {
-  color: var(--primary-color);
-  text-decoration: underline;
+.img-icon {
+   margin-bottom: 20px;
 }
-.btn:hover {
+
+.available-apis {
+  margin-top: 30px;
+}
+.logo-icon {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+     margin-bottom: 20px;
+
+}
+.info-box2 {
+   border: 1px solid rgb(223, 222, 222);
+  padding: 2%;
+  margin: 10px 10px;
+  background-color: white;
+text-align: center
+}
+.btn-add {
+  background-color: #58BF8E;
   color: white;
-  background-color: green;
+  border: 0px;
+  border-radius: 5px;
+  height: 40px;
+  width: 30%;
 }

@@ -8,35 +8,49 @@ appRoute.get('/', user.isAuthenticated, (req, res) => {
 });
 
 
-appRoute.get('/about', user.isAuthenticated, (req, res) => {
-  res.render('Pages/About');
+appRoute.get('/usage', user.isAuthenticated, (req, res) => {
+  res.render('usage');
 });
 
 
-appRoute.get('/register', user.isAuthenticated, (req, res) => {
-  res.render('register');
+appRoute.get('/settings', user.isAuthenticated, (req, res) => {
+  res.render('settings');
 });
 
-appRoute.get('/login', user.isAuthenticated, (req, res) => {
-  const { successMsg } = req.query;
-  res.render('Login', {
-    successMsg,
-  });
+
+appRoute.get('/billings', user.isAuthenticated, (req, res) => {
+  res.render('billings');
 });
 
-appRoute.get('/forgot-password', user.isAuthenticated, (req, res) => {
-  const { successMsg } = req.query;
-  res.render('Pages/Forgotpassword', {
-    successMsg,
-  });
+
+appRoute.get('/authapi', user.isAuthenticated, (req, res) => {
+  res.render('authapi');
 });
 
-appRoute.get('/changepassword', user.isAuthenticated, (req, res) => {
-  const { token } = req.query;
-  if (!token) return res.redirect('/login');
-  res.cookie('changepasstoken', token);
-  return res.render('Pages/Changepassword');
+appRoute.get('/authset', user.isAuthenticated, (req, res) => {
+  res.render('authset');
 });
+
+// appRoute.get('/login', user.isAuthenticated, (req, res) => {
+//   const { successMsg } = req.query;
+//   res.render('Login', {
+//     successMsg,
+//   });
+// });
+//
+// appRoute.get('/forgot-password', user.isAuthenticated, (req, res) => {
+//   const { successMsg } = req.query;
+//   res.render('Pages/Forgotpassword', {
+//     successMsg,
+//   });
+// });
+//
+// appRoute.get('/changepassword', user.isAuthenticated, (req, res) => {
+//   const { token } = req.query;
+//   if (!token) return res.redirect('/login');
+//   res.cookie('changepasstoken', token);
+//   return res.render('Pages/Changepassword');
+// });
 
 
 appRoute.post('/login', user.isAuthenticated, user.login);
