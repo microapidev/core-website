@@ -74,11 +74,6 @@ a:hover{
     margin:0px;
 }
 
-body{
-    font-family: 'Roboto' !important;
-    overflow:hidden;
-    font-style: normal !important;
-}
 
 #auth-h2{
     font-weight:600;
