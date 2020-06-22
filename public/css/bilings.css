@@ -123,17 +123,7 @@ a:hover{
         max-width: 30%;
     }
 }
-
-@media only screen and (max-width: 412px) {
-    .bord {
-      margin: 21px 0px 21px 0px;
-      border: 0.75px solid #000000;
-      border-radius: 5px;
-      max-width: 65.8%;
-      padding: 0px 0px 0px 24px;
-    }
-  }
-  @media only screen and (max-width: 365px) {
+  @media only screen and (max-width: 450px) {
     #month {
       padding-bottom: 40px;
     }
