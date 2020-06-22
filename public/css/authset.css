@@ -405,11 +405,7 @@ a:hover{
 /* end of mobile styles */
 /* ======================================= */
 /* browser defaults styles resets */
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
+
   /* style varibles */
   :root{
     --maingTransition:all 0.3s linear;
@@ -419,10 +415,6 @@ a:hover{
     --mainWhite:#fff;
     --mainGreen:#0ab361;
   }
-  * {
-    box-sizing: border-box;
-  }
-  
   /* Float four columns side by side */
   .column {
     width: 35%;
@@ -488,88 +480,148 @@ h3.rectangle:hover{
     color: #000;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;    
-      margin: 16px -33px
-    }
-
-    .capz{
-        margin: 0 -12px;
-    }
+@media screen and (max-width: 1198px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 16px;
   }
-  .general {
-    margin: 0px 80px;
-    margin-top: 30px;
+
+  h3.rectangle {
+    background: #58bf8e;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 900px;
+  }
+}
+@media screen and (max-width: 964px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 16px;
+  }
+
+  h3.rectangle {
+    background: #58bf8e;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 650px;
+  }
 }
 
-h2{
-    margin-bottom: 30px;
-    
+@media screen and (max-width: 760px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 16px;
+  }
+  h3.rectangle {
+    background: #58bf8e;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 354px;
+  }
+  .capz {
+    margin: 0 -12px;
+  }
+}
+.general {
+  margin: 0px 80px;
+  margin-top: 30px;
+}
+
+h2 {
+  margin-bottom: 30px;
 }
 
 h6 {
-    font-size: 105%;
-    margin-top: 35px
+  font-size: 105%;
+  margin-top: 35px;
 }
 
 .heading {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .form {
-    position: relative;
-    width: 70%;
-    left: 5%;
-    padding: px;
-    top: -20px
+  position: relative;
+  width: 70%;
+  left: 5%;
+  padding: px;
+  top: -20px;
 }
 
 label {
-    font-size: 85%
+  font-size: 85%;
 }
 
 .form-control {
-    margin-bottom: 20px;    
+  margin-bottom: 20px;
 }
 
 label {
-    margin-bottom: -5px;
+  margin-bottom: -5px;
 }
-
-
 
 .radios {
-    display: block;
-    position: ;
-    margin-top: 15px;
-    left: 4%;
-    margin-left: 5%;
+  display: block;
+  position: ;
+  margin-top: 15px;
+  left: 4%;
+  margin-left: 5%;
 }
 
-.req h6{
-    position: relative;
-    font-size: ;
-    top: -10px
+.req h6 {
+  position: relative;
+  font-size: ;
+  top: -10px;
 }
 .req2 {
-    position: relative;
-    top: 10px;
+  position: relative;
+  top: 10px;
 }
 
-.radio1 p{
-    position: absolute;
-    color: aqua;
+.radio1 p {
+  position: absolute;
+  color: aqua;
 }
 
 span {
-    position: relative;
-    left: 40px;
-    color: #868686;
+  position: relative;
+  left: 40px;
+  color: #868686;
+}
+.background-image {
+  display: none;
 }
 
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 16px;
+  }
+  h3.rectangle {
+    background: #58bf8e;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 284px;
+  }
+  .navbar-brand img {
+   display: none;
+ }
 .custom-radio .custom-control-input:checked~.custom-control-label::before,
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
     background-color: black;  /* green */
