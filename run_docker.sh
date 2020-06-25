@@ -13,4 +13,4 @@ docker stop micro-web || true
 docker rm micro-web || true
 
 echo "Running docker image on port:$PORT"
-docker run -p $PORT:3000 --name micro-web $IMAGENAME
+docker run -d -p $PORT:3000 --name micro-web $IMAGENAME
