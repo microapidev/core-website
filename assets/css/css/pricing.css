@@ -1,0 +1,63 @@
+.fa {
+  color: #449342;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.fa:hover {
+  color: #58BF8E;
+}
+p {
+  font-size: 14px;
+  color: #333333;
+}
+
+
+/**********************************************************************
+                          PRICING CARD
+**********************************************************************/
+ul {
+  list-style: none;
+}
+.pricing__card {
+  padding: 3rem 1.5rem;
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+.pricing__card:before {
+  content: " ";
+  position: absolute;
+  top: -170px;
+  left: -30px;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  width: 1200px;
+  height: 180px;
+  background: #449342;
+  z-index: 4;
+}
+.pricing__card:after {
+  content: " ";
+  position: absolute;
+  top: -200px;
+  left: -500px;
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+  width: 1000px;
+  height: 180px;
+  background: #58BF8E;
+  opacity: 0.5;
+  z-index: 9;
+}
+.pricing__amount {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+}
+.pricing__feature {
+  text-align: center;
+}
