@@ -1,0 +1,246 @@
+/*-----------------------------------FONTS----------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+/*-----------------------------------FONTS----------------------------------------------*/
+
+/*------------------------------GENERAL STYLING-----------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+  
+}
+
+.wrapper__page {
+    max-width: 1440px;
+    overflow-x: hidden;
+    background: #E5E5E5;
+    margin: 0 auto;
+}
+
+.container
+    {
+   max-width: 960px;
+}
+/*------------------------------GENERAL STYLING-----------------------------------------*/
+
+
+
+/***********************************FORMS***************************************/
+
+.form {
+    width: 40%;
+    margin-top: 86.33px;
+}
+
+.logo-sign {
+    margin-bottom: 35px;
+}
+
+.form-h {
+    margin-bottom: 48px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1A1B2D;
+}
+
+.form-control {
+    position: relative;
+    padding-right: 100px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 0.5px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+    
+}
+
+.form-group {
+    margin-bottom: 29.53px;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1A1B2D;
+}
+
+.btn-form {
+    width: 100%;
+    height: 60px;
+    left: 500px;
+    top: 566px;
+    
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+.bd-need {
+    border: 1px solid #BDBDBD !important;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 74px;
+    left: 501px;
+    top: 639px;
+    text-align: center;
+    margin-top: 13px;
+    
+}
+
+.bd-need p {
+    margin-top: 23px;
+    font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+}
+
+
+.footer {
+    text-align: center !important;
+    line-height: 100%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+    
+}
+
+a.cont {
+    margin-bottom: 36px;
+    
+}
+
+a.deco {
+    text-decoration: none;
+    color:#828282 !important;
+}
+
+.rights {
+    margin-bottom: 11px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(1, 2, 22, 0.8);
+}
+
+
+
+
+
+/***********************************MEDIA QUERIES 767PX-MAX-WIDTH***************************************/
+
+@media screen and (max-width: 767px) {
+    
+    .form {
+        width: 60%
+    }
+    
+/***********************************END MEDIA QUERIES 767PX-MAX-WIDTH***************************************/
+
+
+/***********************************MEDIA QUERIES 500PX-MAX-WIDTH***************************************/
+
+@media screen and (max-width: 520px) {
+    
+    .logo-sign {
+    }
+    
+    .ps {
+        position: relative;
+        right: 6px;
+    }
+    .pass label{
+        position: relative;
+        display: grid;
+        right: 90px;
+        top: 21px;
+        width: 150px;
+        margin-bottom: 20px;
+        margin-top: 5px
+    }
+    .bd-need p{
+        position: relative;
+        right: px;
+        font-size: 12px;
+    }
+    
+    .form-h h1{
+        font-size: 34px;
+    }
+    
+    label {
+        font-size: 14px;
+    }
+    
+    .footer p {
+        font-size: 14px
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+/***********************************END MEDIA QUERIES 500PX-MAX-WIDTH***************************************/
+
+@media screen and (max-width: 350px) { 
+    .ps {
+        position: relative;
+        right: 6px;
+    }
+    .pass label{
+        position: relative;
+        display: grid;
+        right: 85px;
+        top: 21px;
+        width: 110px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        font-size: 12px
+    }
+    .bd-need p{
+        position: relative;
+        right: px;
+        font-size: 12px;
+    }
+    
+        .form-h h1{
+        font-size: 34px;
+    }
+    
+    label {
+        font-size: 13px;
+    }
+    
+    .footer p {
+        font-size: 12px
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+    
+    @media screen and (max-width: 520px) {
+        
+        .bd-need p{
+        position: relative;
+        right: px;
+        font-size: 10px;
+    }
+        
+    }
