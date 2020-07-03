@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+
+body{
+   
+    background-color: #E5E5E5;
+}
+
+
+  /* Navbar */
+  .bg-dark {
+    background-color: #010216 !important;
+}
+.navbar img{
+        margin-left: 6rem;
+}
+.menu{
+    margin-right: 6rem;
+    border-radius: 5px;
+    width: 115px;
+}
+.pl-3, .px-3 {
+    padding-left: 3rem !important;
+}
+.pr-3, .px-3 {
+    padding-right: 0rem !important;
+}
+.s-in{
+    margin-right: 3.5rem;
+}
+.font-weight-bold {
+    font-weight: 500 !important;
+}
+.text-change {
+    font-size: .9rem;
+}
+
+
+
+
+.navsbar{
+    background-color: #16172D;
+}
+
+
+/* main body */
+
+.tops{
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
+.marginlina {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+
+#as-footer img{
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+#as-footer h3 {
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+}
+#as-footer ul li {
+    line-height:35px;
+}
+#as-footer a, #as-footer p {
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+}
+#as-footer a {
+    color:#fff;
+    text-decoration:none;
+}
+#as-footer a:hover {
+    color:#fff;
+}
+#as-footer .as_copy {
+    padding-top:40px;
+    border-top:1px solid #373b44;
+}
+
+/* Responsiveness */
+@media(max-width:1024px){
+.navbar img{
+        margin-left: 0rem;
+}
+.menu{
+    margin-right: 0rem;
+    width: 115px;
+}
+.pl-3, .px-3 {
+    padding-left: 1rem !important;
+}
+.pr-3, .px-3 {
+    padding-right: 1rem !important;
+}
+.s-in{
+    margin-right: 3.5rem;
+}
+}
+@media(max-width:834px){
+    .navbar{
+        padding: .5rem 0rem;
+    }
+    .pl-3, .px-3 {
+        padding-left: 0rem !important;
+    }
+    .menu{
+        margin-right: 0.2rem;
+    }
+    .s-in {
+        margin-right: 1.5rem;
+    }
+}
+@media(max-width:414px){
+    .pl-3, .px-3 {
+        padding-left: 1rem !important;
+    }
+    #as-footer h3 {
+        font-size: 29px;
+        text-align: center;
+    }
+    #as-footer img{
+        margin-top: 0rem;
+        margin-left: 7rem;
+    }
+    .api{
+        margin-left: 8rem
+    }
+    .other{
+        margin-left: 9.6rem
+    }
+    .othe{
+        margin-left: 9.1rem
+    }
+    .oth{
+        margin-left: 10.6rem
+    }
+    .ap{
+        margin-left: 8.8rem;
+    }
+}
+@media(max-width:375px){
+    .api{
+        margin-left: 7.5rem
+    }
+    .other{
+        margin-left: 8.6rem
+    }
+    .othe{
+        margin-left: 8.1rem
+    }
+    .oth{
+        margin-left: 9.6rem
+    }
+    .ap{
+        margin-left: 7.8rem;
+    }
+}
+@media(max-width:360px){
+    .api{
+        margin-left: 7.2rem;
+    }
+}
