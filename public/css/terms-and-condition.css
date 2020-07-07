@@ -1,0 +1,295 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background: #f5f7f6;
+	position: relative;
+	transition: all 0.6s;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* ====== Scroll to top Button ====== */
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 60px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #449342;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 24px;
+}
+
+/* ===== Main Content =====*/
+.top-group {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+}
+.main {
+	width: 100%;
+	padding: 0 5rem;
+}
+.intro-main {
+	font-size: 28px;
+}
+.intro-second {
+	color: #9b9b9b;
+	font-size: 16px;
+	width: 75%;
+}
+.button-icon {
+	margin-left: 5px;
+}
+/* ====== TERMS AND CONDITIONS CONTENT ======*/
+
+.term {
+	padding: 3rem;
+	margin: 4rem 0;
+	background-color: white;
+	box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.06);
+	border-radius: 10px;
+}
+.term-heading {
+	margin-bottom: 3rem;
+	display: flex;
+	align-items: center;
+}
+.term-content {
+	font-size: 14px;
+	line-height: 2;
+	text-align: justify;
+	color: #8a8a8a;
+}
+.side_text {
+	color: black;
+	font-size: 18px;
+}
+.term ul li {
+	margin-left: 2.5rem;
+	list-style-type: circle;
+	font-size: 14px;
+	line-height: 2;
+	color: #8a8a8a;
+	text-align: justify;
+}
+.term-heading i {
+	font-size: 4rem;
+	color: #449342;
+	margin-right: 1rem;
+	text-align: justify;
+}
+
+/* ======= FORM ======== */
+.form-check {
+	margin-bottom: 20px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	padding-left: 0 !important;
+}
+.form-check-label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.main input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	border-radius: 3px;
+	background-color: #8fdf8e;
+	box-sizing: border-box !important;
+}
+.form-check-label:hover input ~ .checkmark {
+	background-color: #8ca08b;
+}
+.form-check-label input:checked ~ .checkmark {
+	background-color: #449342;
+}
+.checkmark::after {
+	content: "";
+	position: absolute;
+	display: none;
+	box-sizing: content-box !important;
+}
+.form-check-label input:checked ~ .checkmark::after {
+	display: block;
+}
+.form-check-label .checkmark::after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+.form-check-label .text {
+	margin-left: 40px;
+}
+.proceed {
+	padding: 0.7rem 2rem;
+	outline: none;
+	border: none;
+	background: #449342;
+	border-radius: 5px;
+	color: white;
+	font-weight: 500;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+.signup-footer p {
+	padding-left: 0 !important;
+}
+/* ====== MEDIA QUERIES ========= */
+
+@media screen and (max-width: 768px) {
+	.main {
+		padding: 0 4rem;
+	}
+	#myBtn {
+		bottom: 30px;
+		right: 2rem;
+		padding: 7px;
+		font-size: 18px;
+	}
+	.term-content {
+		font-size: 12px;
+	}
+	.term-heading {
+		margin-bottom: 2rem;
+	}
+	.side_text {
+		color: black;
+		font-size: 16px;
+	}
+	.term ul li {
+		margin-left: 2rem;
+		font-size: 12px;
+		line-height: 1.5;
+	}
+	.term-heading i {
+		font-size: 3rem;
+		margin-right: 1rem;
+	}
+	.term-heading {
+		margin-bottom: 2rem;
+		display: flex;
+		align-items: center;
+	}
+	.intro-main {
+		font-size: 18px;
+	}
+	.intro-second {
+		font-size: 14px;
+		width: 100%;
+	}
+	.checkmark {
+		height: 20px;
+		width: 20px;
+		margin-top: 5px;
+	}
+	.form-check-label .checkmark::after {
+		left: 7px;
+		top: 1px;
+		width: 3px;
+		height: 11px;
+	}
+	.form-check-label .text {
+		margin-left: 30px;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.proceed {
+		padding: 0.6rem 1.3rem;
+	}
+}
+@media screen and (max-width: 480px) {
+	.main {
+		padding: 0 2rem;
+	}
+	#myBtn {
+		bottom: 30px;
+		right: 18px;
+		padding: 7px;
+		font-size: 16px;
+	}
+
+	.term-content {
+		font-size: 10px;
+	}
+	.term-heading {
+		margin-bottom: 2rem;
+	}
+	.term ul li {
+		margin-left: 2rem;
+		font-size: 10px;
+		line-height: 1.5;
+	}
+	.term-heading i {
+		font-size: 2.5rem;
+		margin-right: 1rem;
+	}
+	.term-heading {
+		margin-bottom: 2rem;
+		display: flex;
+		align-items: center;
+	}
+	.intro-main {
+		font-size: 16px;
+	}
+	.intro-second {
+		font-size: 10px;
+		width: 100%;
+	}
+	.term {
+		padding: 2rem;
+		margin: 3rem 0;
+		border-radius: 5px;
+	}
+	.checkmark {
+		height: 15px;
+		width: 15px;
+		margin-top: 5px;
+	}
+	.form-check-label .checkmark::after {
+		left: 5px;
+		top: 1px;
+		width: 3px;
+		height: 8px;
+	}
+	.proceed {
+		padding: 0.5rem 1.4rem;
+		font-weight: 500;
+		margin-bottom: 30px;
+	}
+	.form-check-label .text {
+		margin-left: 20px;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --main-page-color: #FFFFFF;
+    --main-font-color: #010216;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    background: #F5F7F6;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* Header */
+.nav-bg {
+    background: var(--main-font-color);
+}
+
+.navbar {
+    padding: .8rem !important;
+    text-align: center;
+}
+
+.navbar-toggler {
+    background: var(--main-page-color);
+}
+
+ul {
+    list-style: none;
+}
+
+ a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--main-page-color) !important;
+}
+
+/* Form */
+.heading {
+    margin-top: 46px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--main-font-color);
+}
+
+.signup {
+    margin-top: 37px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.signup label {
+    margin-bottom: 0;
+}
+
+.signup input {
+    height: 50px;
+    border: 0.5px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.signup button {
+    margin-top: 19px;
+    height: 50px;
+    background: #67A766;
+    color: var(--main-page-color);
+    width: 100%;
+}
+
+.form-check {
+    margin-top: 15px;
+}
+
+.form-check-input {
+    height: 18px !important;
+}
+
+.form {
+    max-width: 690px;
+}
+
+/* Footer */
+footer {
+    background: var(--main-page-color);
+    margin-top: 8px;
+}
+
+.signup-footer img {
+    padding-left: 40px;
+}
+
+.signup-footer p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.signup-footer a {
+    color: var(--main-font-color);
+}
+
+.bottom-footer {
+    background: #F5F7F6;
+    height: 54px;
+}
+
+@media all and (max-width: 340px) {
+    .nav-bg {
+        padding: 0;
+    }
+}
+
+@media all and (min-width: 576px) {
+    .heading {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .collapse {
+        margin-left: 78px;
+    }
+
+    #growth {
+        width: 100%;
+        display: flex;
+    }
+
+    .normal {
+        flex-grow: 1;
+    }
+
+    .abnormal {
+        flex-grow: 3;
+        text-align: right;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .navbar-brand {
+        margin-left: 120px !important;
+    }
+
+    .signup-footer img {
+        position: relative;
+        top: 45%;
+        transform: translateY(-55%);
+    }
+    .heading {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
