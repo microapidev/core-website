@@ -1,0 +1,195 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden ;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Giving it a background image */
+.bg-img {
+    background: url('../img/bg-img.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Giving the background image a dark background */
+.bg-color {
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+}
+
+/* Styling the navbar */
+/* .navbar-nav a {
+    color: #ffffff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 20px !important;
+}
+
+.navbar-toggler-icon {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-nav a.active {
+    border-bottom: 2px solid #58BF8E;
+    width: fit-content;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 2px solid #58BF8E;
+    width: fit-content;
+} */
+
+/* Styling the background text */
+.bg-text {
+    padding: 100px 0 ;
+    line-height: 1.5em;
+    color: #e1e1e1;
+    letter-spacing: .3em;
+}
+
+.bg-text p {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.bg-text h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.bg-text h2 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #58BF8E;
+}
+
+.btn .btn-inner {
+    margin: 25px 10px;
+}
+
+.btn a {
+    border: 1px solid #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 0;
+    font-weight: 500;
+}
+
+.btn a:hover {
+    background-color: #e1e1e1;
+    color: #58BF8E;
+}
+
+/* Styling the about Section */
+.about {
+    background-color: #e5e5e5;
+    padding-bottom: 100px;
+}
+
+.about h5 {
+    padding: 50px 0 15px 0;
+}
+
+.border-bottom {
+    background-color: #58BF8E;
+    width: 80px;
+    height: 3px;
+    margin: 0 auto 50px auto;
+}
+
+.about-event {
+    width: 90%;
+    margin: auto;
+}
+
+.about-card {
+    margin: auto;
+}
+
+.about-card:hover {
+    transition: ease-in-out 2s;
+}
+
+/* Styling the speakers section */
+.speakers h5 {
+    padding: 50px 0 15px 0;
+}
+
+.speaker-card {
+    padding: 10px;
+    /* height: 100%;
+    margin-bottom: 0px; */
+}
+
+/* .speaker-card img{
+    height: 80%;
+} */
+
+/* Styling Pricing Section */
+.pricing {
+    background-color: #e5e5e5;
+    margin: 50px 0 0 0;
+}
+
+.pricing h5 {
+    padding: 50px 0 15px 0;
+}
+
+.inner-row {
+    margin: 10px auto 100px auto;
+    padding: 0;
+}
+
+.card-pricing {
+    background-color: #58BF8E;
+    color: #ffffff;
+}
+
+.card-pricing h4 {
+    font-size: 15px;
+    padding: 40px 20px 0 20px;
+    font-weight: 700;
+}
+
+.card-pricing p {
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.card-pricing h5 {
+    font-size: 15px;
+    padding: 0;
+    font-weight: 700;
+}
+
+/* Styling the package section */
+.package-img {
+    background: url('../img/subscribe.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    
+}
+
+input, select {
+    padding: 10px 80px 10px 5px;
+    margin: 100px auto;
+    border: none;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+::placeholder, select  {
+    color: #e5e5e5;
+}
+
+.bg-color-package {
+    backdrop-filter: blur(8px);
+}
