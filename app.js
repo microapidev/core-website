@@ -30,7 +30,7 @@ app.use(express.static('public'));
 // Registering and setting  the view engine
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views/pages'));
 
 
 app.use((req, res, next) => {
