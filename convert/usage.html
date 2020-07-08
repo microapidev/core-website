@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This CSS link is for BOOTSTRAP -->
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap/bootstrap/css/bootstrap.min.css">
+
+    <!-- This CSS link is my FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <!-- This CSS link is for my CUSTOM CSS -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/usage.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/signup.css">
+
+    <title>MicroApi Usage Stats</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid nav-bg">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a href="#" class="navbar-brand pl-lg-5">
+                    <img src="./assets/img/img/logo.png" alt="logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
+                aria-controls="collapsibleNavbar"
+                aria-expanded="false"
+                aria-label="Toggle Navigation">
+                <!-- <img src="./img/signup/hamburger-menu-38.png" alt="hamburger-menu" class="img-fluid">    -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" id="growth">
+                    <li class="nav-item pr-2 normal">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item pr-2 normal">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item pr-2 normal">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                      <li class="nav-item pr-2 normal">
+                        <a class="nav-link" href="#">Documentation</a>
+                      </li>
+                      <li class="nav-item abnormal pr-lg-4">
+                        <a class="nav-link" href="#">Sign In</a>
+                      </li>
+                </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
+
+           <section class="user container-fluid d-flex flex-column flex-wrap text-center"><br><br>
+            <h1 class="user text-dark text-uppercase"><b>USAGE STATISTICS</b></h1>
+            <div class="user text-left">
+                <br><br>
+                <h5 class="bg-white text-center text-secondary">FREQUENTLY USED</h5>
+            </div>
+            <div class="first container-fluid d-flex flex-row flex-wrap">
+                <div class="col-sm-3 d-flex flex-row">
+                    <div class="card  mb-3" style="max-width: 18rem; height: 14rem;">
+                        <div class="card-header text-white bg-warning">CLOUDINARY API
+                        </div>
+                        <div class="card-body text-dark bg-light">
+                            <img src="./assets/img/new_cloudinary_logo_square 1.png">
+                            <p class="card-text text-center">10,400,200</p>
+                            <p class="card-text text-center">Users Globally</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 d-flex flex-row">
+                    <div class="card  mb-3" style="max-width: 200rem; height: 14rem;">
+                        <div class="card-header text-white bg-primary">PAYSTACK API
+                        </div>
+                        <div class="card-body text-black bg-light">
+                            <img src="./assets/img/image 1.png">
+                            <p class="card-text text-center">8,300,420</p>
+                            <p class="card-text text-center">Users Globally</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 d-flex flex-row">
+                    <div class="card mb-3" style="max-width: 18rem; height:14rem;">
+                        <div class="card-header bg-warning text-white">FLUTTERWAVE API
+                        </div>
+                        <div class="card-body bg-light text-black">
+                            <img src="./assets/img/flutter_wave 1.png">
+                            <p class="card-text text-center">8,000,000</p>
+                            <p class="card-text text-center">Users Globally</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 d-flex flex-row">
+                    <div class="card  mb-3" style="max-width: 18rem; height:14rem;">
+                        <div class="card-header text-white bg-primary">SENDGRID API
+                        </div>
+                        <div class="card-body text-black bg-light">
+                            <img src="./assets/img/SG_Twilio_Lockup_Social-56f3cfd2f6b0c62422980170d57fac64 1.png">
+                            <p class="card-text text-center">6,500,100</p>
+                            <p class="card-text text-center">Users Globally</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <h5 class="bg-white text-secondary">RECENTLY USED</h5>
+            <div class="second container-fluid d-flex flex-column flex-wrap my-3">
+                <div class="col d-flex flex-row">
+                    <div class="rate">
+                        <img src="./assets/img/Vector(20).png" class="rounded-circle bg-danger" style="width: 50px;">
+                    </div>
+                    <div class="rate text-left ml-5">
+                        <h5>Authentication API</h5>
+                        <p class="update" id="auth">Sales in July - Last Update 2d
+                        </p>
+                    </div>
+                </div>
+                <div class="col d-flex flex-row">
+                    <div class="rate">
+                        <img src="./assets/img/Vector(19).png" class="rounded-left bg-warning" style="width: 50px;">
+                    </div>
+                    <div class="rate text-left ml-5">
+                        <h5>Email API</h5>
+                        <p class="update" id="email">Sales in July - Last Update 3h
+                    </div>
+                </div>
+                <div class="col d-flex flex-row">
+                    <div class="rate">
+                        <img src="./assets/img/Vector(18).png" class="rounded-left bg-primary" style="width: 50px;">
+                    </div>
+                    <div class="rate text-left ml-5">
+                        <h5>SMS API</h5>
+                        <p class="update" id="sms">Sales in July - Last Update 3h
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col d-flex flex-row">
+                    <div class="rate">
+                        <img src="./assets/img/Vector(17).png" class="rounded-left bg-success" style="width: 50px;">
+                    </div>
+                    <div class="rate text-left ml-5">
+                        <h5>Excel API</h5>
+                        <p class="update" id="excel">Sales in July - Last Update 3h
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <footer>
+            <div class="container-fluid">
+            <div class="row signup-footer">
+                <div class="col-10 col-sm-5 col-md-4 col-xl-3 mx-auto pt-5">
+                <img src="./assets/img/logo-foot.png" alt="footer-logo" class="img-fluid">
+                </div>
+    
+                <div class="col-10 col-sm-5 col-md-4 col-xl-2 mx-auto pt-4 pt-sm-5">
+                <p>Products</p>
+                <ul>
+                    <li><a href="#">Authentication Api</a></li>
+                    <li><a href="#">Excel Api</a></li>
+                    <li><a href="#">SMS Api</a></li>
+                    <li><a href="#">Vibes Api</a></li>
+                </ul>
+                </div>
+    
+                <div class="col-10 col-sm-5 col-md-4 col-xl-2 mx-auto pt-4 pt-sm-5">
+                <p>Collaboration</p>
+                <ul>
+                    <li><a href="#">Comments</a></li>
+                    <li><a href="#">Track Changes</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+                </div>
+    
+                <div class="col-10 col-sm-5 col-md-6 col-xl-2 mx-auto pt-4 pt-sm-5">
+                <p>Support</p>
+                <ul>
+                    <li><a href="#">MicroApi GitHub</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+                </div>
+    
+                <div class="col-10 col-sm-11 col-md-6 col-xl-2 mx-auto pt-4 pt-sm-5">
+                <p>Explore</p>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="row bottom-footer mt-2">
+                <p class="col-12 text-center pt-3"> All rights Reserved &copy;MicroApi</p>
+            </div>
+        </div>
+        </footer>
+    
+
+
+
+
+
+
+
+
+
+
+        <!-- The Scripts below are from bootstrap. They will enable some bootstrap performance -->
+        <script src="/bootstrap/jquery/jquery-3.5.1.min.js" charset="utf-8"></script>
+        <script src="/bootstrap/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="/bootstrap/font awsome/js/all.js" charset="utf-8"></script>
+        <script src="/bootstrap/popper/popper.min.js" charset="utf-8"></script>
+        <!-- <script type="text/javascript">
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+            $("li.dropdown").click(function () {
+                $("nav.navbar").toggleClass("open");
+            });
+        </script> -->
+</body>
+
+</html>
