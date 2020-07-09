@@ -13,6 +13,11 @@ appRoute.get('/usage', user.isAuthenticated, (req, res) => {
 });
 
 
+appRoute.get('/blogpost', user.isAuthenticated, (req, res) => {
+    res.render('blogpost');
+});
+
+
 appRoute.get('/settings', user.isAuthenticated, (req, res) => {
   res.render('settings');
 });
