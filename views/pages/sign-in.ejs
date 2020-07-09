@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-------------------------------------All Head Components Goes Here------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome icons (free version)-->
+    <script src="./assets/font awsome/js/all.js"></script>
+    <!-- Google fonts -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Core theme CSS-->
+    <link href="assets/css/styles.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <title> Login </title>
+</head>
+<!-------------------------------------END OF Head Components------------------------------------->
+    
+<!-------------------------------------END OF Head Components------------------------------------->
+
+    <!-- Header -->
+    <header>
+        <%- include('../partials/signin_header') -%> 
+    </header>
+    
+<!-------------------------------------END OF Head Components------------------------------------->
+
+
+
+<!-------------------------------------All Body Components Goes Here------------------------------------->
+<body class="wrapper__page">
+        
+<div class="container form">
+    <div class="d-flex justify-content-center logo-sign">    
+        <img src="../../assets/img/Logo-sign.png" class="img-responsive logo-sign">
+    </div>
+    <div class="text-justify form-h">
+        <h1 class="text-center">Sign In</h1>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="inputAddress">Username or Email Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="">
+            </div>
+
+            <div class="form-group">
+
+                <div class="d-flex .flex-row ">
+                  <div class="mr-auto p-2 ps"><label for="inputAddress2">Password</label></div>
+                  <div class="mr-lg-0 mr-sm-0 pass p-2"><label for="inputAddress2" class="f-p"><a href="#">Forgot Password?</a></label></div>
+                </div>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="">
+            </div>
+            <button type="submit" class="btn btn-primary btn-success border border-none btn-form">Sign in</button>
+            <div class="border bd-need">
+                <p class="n-h">New Here? <a href="#" class="c-a">Create an Account</a></p>
+            </div>
+        </form>
+    </div>
+</div>   
+    
+<!-------------------------------------BOTTOM-SECTION------------------------------------->
+    <div class="container form footer text-justify">
+        <p class="cont"><a href="#" class="deco">Contact Us</a></p>
+        <p class="rights">All rights Reserved @MicroApi</p>
+    </div>
+<!-------------------------------------BOTTOM-SECTION------------------------------------->
+    
+<!-------------------------------------FOOTER------------------------------------->
+
+    <footer>
+
+       <%- include('../partials/signin_footer') -%> 
+
+    </footer>
+<!-------------------------------------FOOTER------------------------------------->
+
+
+
+<!-----------------------------Bootstrap JS Links------------------------------->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Javascript Link -->
+    <script src="./js/app.js"></script>
+<!-----------------------------Bootstrap JS Links------------------------------->
+    
+</body>
+<!-------------------------------------End of Body Components Goes Here------------------------------------->
+</html>
