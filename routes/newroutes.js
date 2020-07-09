@@ -13,6 +13,11 @@ appRoute.get('/usage', user.isAuthenticated, (req, res) => {
 });
 
 
+appRoute.get('/blogpost', user.isAuthenticated, (req, res) => {
+    res.render('blogpost');
+});
+
+
 appRoute.get('/settings', user.isAuthenticated, (req, res) => {
   res.render('settings');
 });
@@ -29,6 +34,13 @@ appRoute.get('/authapi', user.isAuthenticated, (req, res) => {
 
 appRoute.get('/authset', user.isAuthenticated, (req, res) => {
   res.render('authset');
+});
+
+appRoute.get('/signup', user.isAuthenticated, (req, res) => {
+  res.render('signup');
+});
+appRoute.get('/blog', user.isAuthenticated, (req, res) => {
+  res.render('blog');
 });
 
 // appRoute.get('/login', user.isAuthenticated, (req, res) => {

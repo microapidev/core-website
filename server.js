@@ -49,6 +49,6 @@ server.on('listening', () => {
 
 server.listen(port);
 app.all('*', (req, res) => {
-  res.render('Pages/404.ejs');
+  res.render('404.ejs');
 });
 module.exports = server;
