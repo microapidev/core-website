@@ -43,7 +43,7 @@ appRoute.get('/blog', user.isAuthenticated, (req, res) => {
   res.render('blog');
 });
 
-appRoute.get('/partners', (req, res) => {
+appRoute.get('/partners', user.isAuthenticated, (req, res) => {
   res.render('partners');
 });
 
