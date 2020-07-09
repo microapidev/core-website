@@ -34,6 +34,9 @@ appRoute.get('/authset', user.isAuthenticated, (req, res) => {
 appRoute.get('/signup', user.isAuthenticated, (req, res) => {
   res.render('signup');
 });
+appRoute.get('/blog', user.isAuthenticated, (req, res) => {
+  res.render('blog');
+});
 
 // appRoute.get('/login', user.isAuthenticated, (req, res) => {
 //   const { successMsg } = req.query;
