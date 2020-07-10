@@ -47,7 +47,9 @@ appRoute.get('/partners', user.isAuthenticated, (req, res) => {
   res.render('partners');
 });
 
-
+appRoute.get('/helpcenter', user.isAuthenticated, (req, res) => {
+  res.render('helpcenter');
+});
 // appRoute.get('/login', user.isAuthenticated, (req, res) => {
 //   const { successMsg } = req.query;
 //   res.render('Login', {
