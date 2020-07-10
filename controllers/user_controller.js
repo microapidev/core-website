@@ -1,9 +1,9 @@
 /* eslint-disable camelcase */
 const fs = require('fs');
 const uu = require('uuid');
+const passwordValidator = require('password-validator');
 const users = require('../models/user_model');
 const validator = require('./utility/validator');
-const passwordValidator = require('password-validator');
 
 module.exports = {
   create: async (req, res) => {
@@ -27,34 +27,35 @@ module.exports = {
       const options = {
         errors: {
           wrap: {
-            label: ""
-          }
-        }
+            label: '',
+          },
+        },
+      };
+      const { error } = validator.signupvalidation(req.body, options);
+      if (error) {
+        return res.status(400).json({ msg: error.details[0].message.replace(/\//g, '') });
       }
-      const {error} = validator.signupvalidation(req.body,options);
-      if(error) 
-          {   
-            return res.status(400).json({ msg: error.details[0].message.replace(/\//g, "") });
-          } 
 
       if (password !== cpassword) {
-        return res.status(400).json({ msg: "Password didn't correspond" });
+        return res.status(400).json({ msg: 'Password didn\'t correspond' });
       }
-       //validate password
-       const schema = new passwordValidator()
-       schema
-      .has().uppercase()
-      .has().lowercase()
-      .has().digits()
-      .has().not().spaces() 
-     if(schema.validate(password) == false){
-      return res.status(400).json({ msg: "Password must contain uppercase,lowercase and digit" });
-     }
-     
+      // validate password
+      const schema = new passwordValidator();
+      schema
+        .has().uppercase()
+        .has().lowercase()
+        .has()
+        .digits()
+        .has()
+        .not()
+        .spaces();
+      if (schema.validate(password) == false) {
+        return res.status(400).json({ msg: 'Password must contain uppercase,lowercase and digit' });
+      }
+
       users.push(newUser);
       fs.writeFileSync('models/userdata.json', JSON.stringify(users));
       // return res.status(400).send({message:"failed to register"})
-
 
       return res.status(200).json({ message: 'Registration succesful', data: users });
     } catch (error) {
@@ -66,22 +67,20 @@ module.exports = {
     const options = {
       errors: {
         wrap: {
-          label: ""
-        }
-      }
-    }
+          label: '',
+        },
+      },
+    };
     // validate the user first
     const { email, password } = req.body;
-    if(email === "" || password === ""){
-      res.status(400).json({message:"All field must be filled"})
+    if (email === '' || password === '') {
+      res.status(400).json({ message: 'All field must be filled' });
     }
-    //valid the user email in case of hacking attempt lolz
-    const {error} = validator.loginvalidation({ email, password },options);
-    if(error) 
-        {   
-          return res.status(400).json({ msg: error.details[0].message.replace(/\//g, "") });
-        } 
-    
+    // valid the user email in case of hacking attempt lolz
+    const { error } = validator.loginvalidation({ email, password }, options);
+    if (error) {
+      return res.status(400).json({ msg: error.details[0].message.replace(/\//g, '') });
+    }
 
     // validate the user
     try {

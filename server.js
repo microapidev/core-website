@@ -3,6 +3,21 @@ const http = require('http');
 const config = require('./config');
 const app = require('./app');
 
+/**
+ * Module to allow usage of process.env
+ */
+require('dotenv').config();
+
+// connect to mongodb
+console.log('\n \t Attempting to connect to database...');
+
+// connect to mongodb
+const database = require('./db/database');
+
+database.connect();
+
+console.log('\n \t Database connected successfully');
+
 const normalizerPort = (val) => {
   const port = parseInt(val, 10);
 

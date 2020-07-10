@@ -1,6 +1,7 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const express = require('express');
+
 const app = express();
 const jwt = require('jsonwebtoken');
 
@@ -8,9 +9,7 @@ app.use(express.json());
 
 const port = process.env.PORT;
 
-const server = app.listen(port, () =>
-  console.log(`Listening on port ${port}...`)
-);
+const server = app.listen(port, () => console.log(`Listening on port ${port}...`));
 
 const Joi = require('@hapi/joi');
 
@@ -30,15 +29,13 @@ const users = [
   },
 ];
 
-const signToken = (id) => {
-  return jwt.sign(
-    { id },
-    'HZSg5MAlxFZz454jFJSKJBHJsvgdvypd.SqUVOH34IgShjshjfhjahhADGHYUQEFyyGHJBSghv',
-    {
-      expiresIn: '1d',
-    }
-  );
-};
+const signToken = (id) => jwt.sign(
+  { id },
+  'HZSg5MAlxFZz454jFJSKJBHJsvgdvypd.SqUVOH34IgShjshjfhjahhADGHYUQEFyyGHJBSghv',
+  {
+    expiresIn: '1d',
+  },
+);
 
 const createSendToken = (user, statusCode, res) => {
   const token = signToken(user.id);
@@ -102,7 +99,7 @@ describe('User API', () => {
     });
 
     it('It should NOT create a new user in the DB with same email', (done) => {
-      let emails = users.map((el) => el.email);
+      const emails = users.map((el) => el.email);
 
       const user = {
         email: 'hybee.dev@gmail.com',
@@ -152,7 +149,7 @@ describe('User API', () => {
           res.should.have.status(400);
           res.body.response.should.have.property('password');
           res.body.response.password.should.be.eq(
-            'Password is required'
+            'Password is required',
           );
         });
       done();
@@ -203,11 +200,9 @@ const validateEmail = (email, notEmpty) => {
   return true;
 };
 
-const getField = (name) => {
+const getField = (name) =>
   // Returns output text
-  return `${name}`;
-};
-
+  `${name}`;
 const functions = {
   checkName: (name) => {
     if (!validateInput(name, true, false)) {
@@ -246,7 +241,7 @@ describe('Signup Fields Tests', () => {
   it('it should get a valid email', (done) => {
     const email = functions.checkEmail('adefemi101@gmail.com');
     email.should.match(
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     );
     done();
   });
@@ -254,7 +249,7 @@ describe('Signup Fields Tests', () => {
   const password = functions.checkPassword('olaWale_17#');
   it('password should be 8 chars or more and must contain at least 1 lowercase, uppercase, numeric and special characters', (done) => {
     password.should.match(
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_!@#\$%\^&\*])(?=.{8,})/
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[_!@#\$%\^&\*])(?=.{8,})/,
     );
 
     done();
@@ -273,26 +268,25 @@ describe('Signup Fields Tests', () => {
  */
 
 // node assert module;
-var assert = require('assert');
+const assert = require('assert');
 
 // mock confirm password function
 const confirmPassword = (str1, str2) => str1 === str2;
 
-//mock check string length function
+// mock check string length function
 const checkLength = (str) => str.length > 5;
 
 // mock for email validation function
-const validateEmailField = (email) =>
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
+const validateEmailField = (email) => /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+  email,
+);
 
-describe('Test the signup page', function () {
+describe('Test the signup page', () => {
   describe('Test to check if password match', () => {
-    it("should return false if password and confirmpassword don't match", () => {
+    it('should return false if password and confirmpassword don\'t match', () => {
       assert.equal(confirmPassword('Hello', 'Hell'), false);
     });
-    it("should return true if password and confirmpassword don't match", () => {
+    it('should return true if password and confirmpassword don\'t match', () => {
       assert.equal(confirmPassword('Hello', 'Hello'), true);
     });
   });
@@ -323,16 +317,14 @@ describe('Test the signup page', function () {
 
 const request = require('supertest');
 
-
-
 const userCredentials = {
   email: 'johndoe@gmail.com',
   password: 'garyTheSnail',
   confirmPassword: 'garyTheSnail',
 };
 
-describe('POST /api/v1/registration', function () {
-  beforeEach(function (done) {
+describe('POST /api/v1/registration', () => {
+  beforeEach((done) => {
     userCredentials;
     done();
   });
@@ -346,14 +338,12 @@ describe('POST /api/v1/registration', function () {
   //     .send(userCredentials)
   //     .end((err, res) => {
   //       if (err) console.log(err);
-  //       res.should.have.status(200); 
+  //       res.should.have.status(200);
   //     });
   //   done();
   // });
 
-  it('verify if it sends an error message if email field is not filled correctly', function (done) {
-
-    
+  it('verify if it sends an error message if email field is not filled correctly', (done) => {
     request
       .agent('https://auth.microapi.dev/v1')
       .post('/register')
@@ -364,14 +354,12 @@ describe('POST /api/v1/registration', function () {
       })
       .end((err, res) => {
         if (err) console.log(err);
-        res.should.have.status(400); 
+        res.should.have.status(400);
       });
     done();
   });
 
-  it('verify if it sends an error message if email field is empty', function (done) {
-
-    
+  it('verify if it sends an error message if email field is empty', (done) => {
     request
       .agent('https://auth.microapi.dev/v1')
       .post('/register')
@@ -382,28 +370,28 @@ describe('POST /api/v1/registration', function () {
       })
       .end((err, res) => {
         if (err) console.log(err);
-        res.should.have.status(400); 
+        res.should.have.status(400);
       });
     done();
   });
 
-  it('verify if it sends an error message if password field is empty', function (done) {
+  it('verify if it sends an error message if password field is empty', (done) => {
     request
       .agent('https://auth.microapi.dev/v1')
       .post('/register')
       .send({
         email: 'johndoe@gmail.com',
         password: '',
-        confirmPassword: ''
+        confirmPassword: '',
       })
       .end((err, res) => {
         if (err) console.log(err);
-        res.should.have.status(400); 
+        res.should.have.status(400);
       });
     done();
   });
 
-  it('verify if it sends an error message if password field does not math confirm password field', function (done) {
+  it('verify if it sends an error message if password field does not math confirm password field', (done) => {
     request
       .agent('https://auth.microapi.dev/v1')
       .post('/register')
@@ -414,12 +402,12 @@ describe('POST /api/v1/registration', function () {
       })
       .end((err, res) => {
         if (err) console.log(err);
-        res.should.have.status(400); 
+        res.should.have.status(400);
       });
     done();
   });
 
-  it('verify if it sends an error message if password field is weak', function (done) {
+  it('verify if it sends an error message if password field is weak', (done) => {
     request
       .agent('https://auth.microapi.dev/v1')
       .post('/register')
@@ -430,12 +418,12 @@ describe('POST /api/v1/registration', function () {
       })
       .end((err, res) => {
         if (err) console.log(err);
-        res.should.have.status(400); 
+        res.should.have.status(400);
       });
     done();
   });
 
-  it('verify if it sends an error message if all fields are empty', function (done) {
+  it('verify if it sends an error message if all fields are empty', (done) => {
     request
       .agent('https://auth.microapi.dev/v1')
       .post('/register')
@@ -446,7 +434,7 @@ describe('POST /api/v1/registration', function () {
       })
       .end((err, res) => {
         if (err) console.log(err);
-        res.should.have.status(400); 
+        res.should.have.status(400);
       });
     done();
   });

@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node server",
     "dev": "nodemon server",
-    "test": "mocha --exit ./test/unit/**"
+    "test": "mocha --exit ./test/unit/**",    
+    "lint": "eslint \"./**/*.js\"",
+    "lint:fix": "eslint --fix \"./**/*.js\""
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +26,7 @@
     "joi-phone-number": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
     "mocha": "^7.2.0",
+    "mongoose": "^5.9.20",
     "nodemailer": "^6.4.8",
     "nodemailer-mailgun-transport": "^2.0.0",
     "password-validator": "^5.0.3",

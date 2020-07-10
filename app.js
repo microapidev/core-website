@@ -5,7 +5,6 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const appRoute = require('./routes/newroutes');
 
-
 const app = express();
 // const cors = require('cors');
 const mainRoute = require('./routes/route');
@@ -21,17 +20,14 @@ app.use((req, res, next) => {
 
 app.use(cookieParser());
 
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
-
 
 // Registering and setting  the view engine
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
-
 
 app.use((req, res, next) => {
   if (!!req.cookies.auth) {
@@ -41,7 +37,6 @@ app.use((req, res, next) => {
   }
   next();
 });
-
 
 app.use('/api/v1', mainRoute);
 app.use(appRoute);
