@@ -27,10 +27,16 @@
     color: #31AA52 !important;
 }
 
+
+
 .api {
     align-items: center;
     margin: 1rem;
     flex: 1 0 320px;
+}
+
+#add {
+    cursor: pointer;
 }
 
 .api__title {
