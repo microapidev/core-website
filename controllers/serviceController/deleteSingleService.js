@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 // Utilities
 const CustomError = require('../../utils/customError');
-const responseHandler = require('../../utils/responseHandler');
+const responseHandler = require('../../utils/responsehandler');
 
 // Models
 const ServiceModel = require('../../models/services');
