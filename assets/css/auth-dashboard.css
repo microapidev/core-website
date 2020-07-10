@@ -1,0 +1,221 @@
+/**Root Styles**/
+:root{
+    --primary: #31AA52;
+    --secondary:#16172D;
+    --tertiary:#E21313;
+    --white: #FFFFf9;
+    --numbers:#5F5F5F
+}
+/**Resets**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**Base styles**/
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 700;
+}
+li a.bordered{
+    border-bottom: 5px solid var(--primary);
+}
+.leading{
+    font-size:1.3rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.numbers{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 54px;
+    color: var(--numbers);
+    padding-top: 1.8rem;
+}
+h1.facebook{
+    margin-top: 1.5rem;
+}
+span.inarow{
+    color: var(--primary);
+    padding:.5rem 0;
+}
+sup.success{
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--primary);
+}
+sup.failure{
+    font-size: 22px;
+    line-height: 33px;
+    color: var(--tertiary);
+}
+img.vector{
+    text-align:center;
+}
+span.days{
+    font-weight: normal;
+    font-size:1em;
+    line-height:1.3rem;
+    color:var(--secondary);
+    padding-top: 1.2rem;
+}
+body{
+    font-size: 1em /**16px**/;
+    font-family: 'Times New Roman', Times, serif;
+}
+.site-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+    padding:.75rem 1.75rem ;
+}
+.site-nav img{
+    max-width: 100%;
+    height: auto;
+}
+.site-nav .nav-items li{
+    display: inline-block;
+    margin-top: auto;
+}
+.site-nav .nav-items li a{
+    color:var(--primary);
+    font-weight: 500;
+    padding-left: 1rem;
+} 
+#dashboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.75rem;
+}
+#dashboard ul li{
+    display: inline-block;
+    margin-left: .5rem;
+}
+.input-group{
+    background: var(--secondary);
+    color: var(--primary);
+    width: 12rem;
+    border-radius: 5px;
+    padding: .5rem .85rem;
+}
+img.search{
+    font-size: .95rem;
+    position: relative;
+    right: 40;
+    top: 5px;
+}
+a.applications{
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    font-size: 1.05rem;
+    padding-right: 1.1rem;
+    justify-content: flex-end;
+}
+img.caret{
+    padding-left: .75rem;
+    height: 1rem;
+}
+.api-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0;
+}
+.api-links a{
+    color:var(--primary);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.left li{
+    display: inline-block;
+}
+.left li a{
+    padding: 0 1.75rem;
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.1rem;
+}
+.api-grid{
+    background:var(--white);
+    border: 1px solid var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    grid-column: span 4;
+    margin: 0 5%; 
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.75rem;
+    margin-top: 2rem;
+}
+img.vector{
+    width: 200px;
+}
+@media only screen and (max-width:960px){
+    .api-grid{
+        grid-column: span 6;
+    }
+}
+@media only screen and (max-width:620px){
+    #dashboard{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 2rem;
+    }
+    #dashboard li a{
+        padding-left:0;
+    }
+    .api-info{
+        margin-top: 1.25rem;
+    }
+    a.applications{
+        display: flex;
+        margin-left: 1.25rem;
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+}
+@media only screen and (max-width:540px){
+    /*Contents are few, so scrolling is easy*/
+    .nav-items{
+        display:none;
+    }
+    #dashboard{
+        padding: 1.5rem .5rem;
+    }
+    .api-grid{
+        grid-column: span 12;
+    }
+    .api-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left li {
+        padding-top: .75rem;
+    }
+    li.pull-right{
+        padding-left: 1.55rem;
+        padding-top: .75rem;
+    }
+}
+
+
+
