@@ -3,7 +3,6 @@ const axios = require('axios');
 const mailer = require('./utility/mail/mail');
 const fPassTemplate = require('./utility/mail/forgot-password');
 
-
 const apiUrl = 'https://auth.microapi.dev/v1';
 
 // This is an external dashboard url to task 9
@@ -65,7 +64,6 @@ exports.forget = (req, res) => {
   });
 };
 
-
 exports.changepassword = (req, res) => {
   const data = req.body;
   const { changepasstoken } = req.cookies;
@@ -77,17 +75,14 @@ exports.changepassword = (req, res) => {
   ).then(() => {
     const msg = encodeURIComponent('You have successfully changed your password, please login');
     return res.redirect(`/login?successMsg=${msg}`);
-  }).catch((err) => {
-    return res.render('Pages/Changepassword', {
-      error: err.response ? err.response.data : '',
-      msg: !err.response || typeof err.response.data === 'string' ? 'An error has occurred, please try again later' : '',
-    });
-  })
+  }).catch((err) => res.render('Pages/Changepassword', {
+    error: err.response ? err.response.data : '',
+    msg: !err.response || typeof err.response.data === 'string' ? 'An error has occurred, please try again later' : '',
+  }))
     .catch((err) => {
-      console.log(err)
+      console.log(err);
     });
 };
-
 
 exports.login = (req, res) => {
   const data = req.body;
@@ -105,7 +100,7 @@ exports.login = (req, res) => {
 
     });
   }).catch((err) => {
-    console.log(err)
+    console.log(err);
   });
 };
 
@@ -113,7 +108,6 @@ exports.logout = (req, res) => {
   res.clearCookie('auth');
   return res.redirect('/');
 };
-
 
 exports.dashboard = (req, res) => {
   const token = req.cookies.auth;
