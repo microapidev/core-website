@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configured API</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/configured-api.css">
+    <!-- Toggle Button -->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="row m-0 p-0 d-flex flex-row justify-content-between align-items-center px-3 px-md-5"
+        style="height:3.125rem;background: #16172D;">
+        <nav class="w-100 navbar navbar-expand-lg navbar-light justify-content-between p-0"
+            style="background-color: #16172D;z-index:1;">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.svg" alt="Micro Api Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="w-100 nav-fill navbar-nav mr-auto d-flex flex-column flex-md-row justify-content-between">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Configured API list</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #31aa52;">
+                            A. Ifediora
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #16172D;">
+                            <a class="dropdown-item text-center text-white" href="#">Action</a>
+                            <a class="dropdown-item text-center text-white" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center text-white" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid m-0 py-3" style="background-color: #f5f7f6;">
+        <div
+            class="container-fluid px-0 d-flex flex-column-reverse flex-md-row justify-content-between align-items-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" id="all-tab" data-toggle="tab" href="#all" role="tab"
+                        aria-controls="all" aria-selected="true">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" id="active-api-tab" data-toggle="tab" href="#active-api" role="tab"
+                        aria-controls="active-api" aria-selected="false">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" id="contact-tab" data-toggle="tab" href="#inactive-api" role="tab"
+                        aria-controls="inactive-api" aria-selected="false">Inactive</a>
+                </li>
+            </ul>
+            <div class="col-12 col-md-3">
+                <form class=" search form-inline my-2 my-lg-0 mx-auto" id="search">
+                    <div
+                        class="form-group w-100 d-flex flex-row justify-content-between align-items-center mx-auto text-success rounded">
+                        <input class="search__input form-control col-10 py-1 border-0 bg-transparent" type="search"
+                            placeholder="Search APIs" aria-label="Search">
+                        <button class="search__btn btn col-2 my-sm-0" type="submit text-success">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active d-flex flex-wrap justify-content-around py-5" id="all" role="tabpanel"
+                aria-labelledby="all-tab">
+                <div class="api py-5 px-3 d-flex flex-column justify-content-center align-items-center bg-white rounded shadow"
+                    id="add">
+                    <div class="text-dark">
+                        <i class="fa fa-plus fa-5x"></i>
+                    </div>
+
+                    <div class="api__tags text-right mt-3" style="max-width:320px;">
+                        <p class="api__title">Add More APIs</p>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column align-items-center bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/key.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Authentication API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right" style="max-width:320px;">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3" style="max-width:320px;">
+                        <li class="api__list list-inline-item py-1 px-3">Web</li>
+                        <li class="api__list list-inline-item p-1 px-3">Security</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/email.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Email API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Tools</li>
+                        <li class="api__list list-inline-item p-1 px-3">Communication</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/excel.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Excel API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Email</li>
+                        <li class="api__list list-inline-item p-1 px-3">Utilities</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/sms.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">SMS API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Email</li>
+                        <li class="api__list list-inline-item p-1 px-3">Communication</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/notification.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Notification API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Social</li>
+                        <li class="api__list list-inline-item p-1 px-3">Security</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/comment.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Comments API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Social</li>
+                        <li class="api__list list-inline-item p-1 px-3">Communication</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/transaction.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Transaction API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Finance</li>
+                        <li class="api__list list-inline-item p-1 px-3">Management</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/complaints.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Complaints API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Email</li>
+                        <li class="api__list list-inline-item p-1 px-3">Communication</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/user-management.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">User Management API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Logistics</li>
+                        <li class="api__list list-inline-item p-1 px-3">Management</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/store-management.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Store Management API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Logistics</li>
+                        <li class="api__list list-inline-item p-1 px-3">E-commerce</li>
+                    </div>
+                </div>
+                <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                    <div class="api__desc d-flex flex-row justify-content-between" style="max-width:320px;">
+                        <div class="mr-3">
+                            <img src="assets/img/invitation.svg" alt="">
+                        </div>
+                        <div class="">
+                            <p class="api__title">Invitation Service API</p>
+                            <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                        </div>
+                    </div>
+                    <div class="api__setting text-right">
+                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                        <a href="" class=" ml-5">
+                            <img src="assets/img/settings.png" alt="">
+                        </a>
+                    </div>
+                    <div class="api__tags text-right mt-3">
+                        <li class="api__list list-inline-item py-1 px-3">Email</li>
+                        <li class="api__list list-inline-item p-1 px-3">Payments</li>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="active-api" role="tabpanel" aria-labelledby="active-api-tab">
+
+                <!-- Active API list goes here -->
+
+            </div>
+            <div class="tab-pane fade" id="inactive-api" role="tabpanel" aria-labelledby="inactive-api-tab">
+
+                <!-- Inactive API list goes here -->
+
+            </div>
+        </div>
+    </section>
+</body>
+<script src="assets/jquery/jquery-3.5.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/font awsome/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+</html>
