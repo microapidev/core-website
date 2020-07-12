@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+font-size: 1.5em !important;
+font-weight: bold !important;
+margin-top: 20px;
+}
+.card{
+margin-bottom: 20px;
+text-align: center;
+}
+h4{
+    font-weight: bold;
+}
+.image1{
+    width: 21%;
+    margin-top: 10px;
+}
+.image2{
+    width: 42%;
+}
+.image3{
+width: 20%;
+margin-top: 10px;
+}
+.image4{
+width: 18%;
+margin-top: 10px;
+}
+.btn{
+width: 35%;
+margin-top: 25px;
+margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1024px){
+.card{
+margin-bottom: 40px;
+}
+.btn{
+width: 50%;
+margin-top: 20px;
+}
+}
