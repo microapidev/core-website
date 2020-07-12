@@ -1,0 +1,115 @@
+
+.first{
+  margin-left:50px;
+  margin-right: 120px;
+}
+.second1{
+  background:black;
+}
+
+
+.second{
+  background: #58BF8E
+}
+
+.img1{
+  margin-left: 30px;
+}
+
+.four{
+  background-image: url(./Vector\ \(8\).png) right !important;
+}
+#one{
+  background: url(./Vector\ \(8\).png) right no-repeat;
+  background-color: white ;
+  background-position-x: 150px;
+  padding: 5px 5px;
+  
+}
+.five{
+  font-size: 100px !important;
+}
+a:hover{
+  border-bottom: 2px solid white !important;
+}
+
+
+
+@media(max-width:375px){
+  .first{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .img1{
+      margin-left: 10px;
+  }
+}
+
+
+
+@media(min-width:376px) and (max-width:500px){
+  .first{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}
+
+
+@media(min-width:501px) and (max-width:768px){
+  .first{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+}
+
+@media(min-width:769px) and (max-width:1200px){
+  .first{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+}
+section {
+  padding: 5%;
+}
+.info-box{
+  border: 1px solid rgb(223, 222, 222);
+  padding: 2%;
+  margin: 10px 10px;
+  background-color: white;
+}
+.user-settings {
+  position: relative;
+  display: inline-block;
+  left: 80%;
+}
+.img-icon {
+   margin-bottom: 20px;
+}
+
+.available-apis {
+  margin-top: 30px;
+}
+.logo-icon {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+     margin-bottom: 20px;
+
+}
+.info-box2 {
+   border: 1px solid rgb(223, 222, 222);
+  padding: 2%;
+  margin: 10px 10px;
+  background-color: white;
+text-align: center
+}
+.btn-add {
+  background-color: #58BF8E;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  height: 40px;
+  width: 30%;
+}

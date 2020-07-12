@@ -4,6 +4,10 @@ const user = require('../controllers/usercontroller');
 const appRoute = express.Router();
 
 appRoute.get('/', user.isAuthenticated, (req, res) => {
+  res.render('pages/homepage', { pageName: 'Home' });
+});
+
+appRoute.get('/dashboard', user.isAuthenticated, (req, res) => {
   res.render('index', { variable: 'Hello Guys' });
 });
 

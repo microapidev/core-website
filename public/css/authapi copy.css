@@ -1,0 +1,141 @@
+.first{
+    margin-left:50px;
+    margin-right: 120px;
+}
+.second{
+    background: #58BF8E
+}
+.second1{
+    background:black;
+  }
+  
+.img1{
+    margin-left: 30px;
+}
+
+.four{
+    background-image: url(./Vector\ \(8\).png) right !important;
+}
+#one{
+    background: url(./Vector\ \(8\).png) right no-repeat;
+    background-color: white ;
+    background-position-x: 150px;
+    padding: 5px 5px;
+    
+}
+.five{
+    font-size: 100px !important;
+}
+a:hover{
+    border-bottom: 2px solid white !important;
+}
+
+
+
+@media(max-width:375px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .img1{
+        margin-left: 10px;
+    }
+}
+
+
+
+@media(min-width:376px) and (max-width:500px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+@media(min-width:501px) and (max-width:768px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media(min-width:769px) and (max-width:1200px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+/*Authentication API page by lolade
+*/
+*{
+    padding:0px;
+    margin:0px;
+}
+
+
+#auth-h2{
+    font-weight:600;
+}
+
+.new-app{
+    border:1px solid #58BF8E;
+    border-radius:5px;
+    margin-left:1px !important;
+    margin-right:1px !important;
+}
+
+.project-prop{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+
+.dot{
+    position: absolute;
+    top: 03px;
+    left: 81%;
+}
+
+#dot2{
+    top:15px;
+}
+
+.imgi{
+    display:block;
+}
+
+button{
+    background:#58BF8E !important;
+    color:white !important;
+}
+button a{
+    color:white !important;
+    text-decoration: none !important;
+}
+
+/* .background{
+    position:absolute;
+} */
+
+.background img{
+    position:absolute;
+    opacity:0.3;
+    top:35%;
+    left:65%;
+}
+
+#eclipse{
+    width: 491.71px;
+    height: 600.68px;
+}
+
+#key{
+    top:57%;
+    left:75%;
+}
+
+
+
