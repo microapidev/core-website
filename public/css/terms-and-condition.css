@@ -163,9 +163,9 @@ body {
 	margin-bottom: 30px;
 	font-weight: 600;
 }
-.signup-footer p {
+/* .signup-footer p {
 	padding-left: 0 !important;
-}
+} */
 /* ====== MEDIA QUERIES ========= */
 
 @media screen and (max-width: 768px) {

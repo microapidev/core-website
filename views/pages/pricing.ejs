@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MicroApi</title>
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-
-  <!-- css link -->
-  <link rel="stylesheet" href="../../assets/css/css/index.css">
-  <link rel="stylesheet" href="../,,/assets/css/css/pricing.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="shortcut icon" href="/img/layers.png" type="image/x-icon"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <!-- css link -->
+   <!-- <link rel="stylesheet" href="css/responsive.css" /> -->
+  <link rel="stylesheet" href="css/pricing.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
 
-
-</head><body>
+<body>
   
   <header>
-
-    <%- include('../partials/pricing_header') -%>
-
+   <!-- include header.ejs -->
+   <%- include('../partials/header')-%>
 </header>
 
     <!-- first section -->
@@ -39,7 +37,7 @@
           </div>
           
           <div class="col-md-6">
-            <img src="../../assets/img/undraw_online_payments_luau.svg" alt="header illustration">
+            <img src="/img/undraw_online_payments_luau.svg" alt="header illustration">
             
           </div>
         </div>
@@ -154,9 +152,16 @@
     </section>
 
 
-      <footer class="footer w-100 h-100">
+   <!-- Footer -->
+   <footer>
+    <!-- include footer.ejs -->
+    <%- include('../partials/footer')-%>
+</footer>
 
-        <%- include('../partials/pricing_footer') -%>
+<!-- Script start -->
+<!-- include script.ejs -->
+<%- include('../partials/scripts')-%>
+<!-- Script end -->
 
-      </footer>
 </body>
+</html>
