@@ -1,0 +1,630 @@
+.first{
+    margin-left:50px;
+    margin-right: 120px;
+}
+.second{
+    background: #58BF8E
+}
+.second1{
+  background:black;
+}
+
+.img1{
+    margin-left: 30px;
+}
+
+.four{
+    background-image: url(./Vector\ \(8\).png) right !important;
+}
+#one{
+    background: url(./Vector\ \(8\).png) right no-repeat;
+    background-color: white ;
+    background-position-x: 150px;
+    padding: 5px 5px;
+    
+}
+.five{
+    font-size: 100px !important;
+}
+a:hover{
+    border-bottom: 2px solid white !important;
+}
+
+
+
+@media(max-width:375px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .img1{
+        margin-left: 10px;
+    }
+}
+
+
+
+@media(min-width:376px) and (max-width:500px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+@media(min-width:501px) and (max-width:768px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media(min-width:769px) and (max-width:1200px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+/* desktop styles  */
+@media only screen and (min-width:961px){
+    /* styles for ssl certificate container */
+    .ssl-certificate-container{
+        position: relative;
+        margin:10px;
+    }
+    .title-and-check-container{
+      margin:10px 0px;
+      padding:1rem;
+      height: 200px;
+    }
+    .title-and-check-container h2{
+      letter-spacing: var(--mainSpacing);
+      color:var(--mainBlack);
+    }
+    .title-and-check-container p{
+      letter-spacing: var(--mainSpacing);
+      color:var(--mainBlack);
+    }
+    
+    
+    .checks{
+      padding:1rem;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      background:var(--mainGrey);
+      width:100%;
+    
+    }
+    .enablement{
+      margin:10px;
+    }
+    .checks radio,h3,p{
+      display:inline-block;
+    }
+    
+    .checks h3,p{
+      color:var(--mainBlack);
+    }
+    .checks h3{
+      letter-spacing: var(--mainSpacing);
+    }
+    .div-style{
+      margin:10px 0;
+      padding:1rem;
+    }
+    .div-style-title{
+      color:var(--mainBlack);
+      letter-spacing: var(--mainSpacing);
+      margin-bottom: 7px;
+    }
+    .div-style-text{
+      color:var(--mainBlack);
+      letter-spacing: var(--mainSpacing);
+      margin-bottom: 10px;
+      /* font-family: 'Overpass', sans-serif; */
+    }
+    .confirm-ownership{
+      background:var(--mainGrey);
+      width:100%;
+      padding:1rem 1.5rem;
+      margin:10px;
+    }
+    .confirm-ownership h4{
+      color:var(--mainBlack);
+      margin-bottom:10px;
+      letter-spacing: var(--mainSpacing);
+    }
+    .credentials-container{
+      margin:10px 0;
+      margin-bottom: 10px;
+      padding: 1rem;
+    }
+    .info{
+      background:grey;
+      padding:1rem 1.4rem;
+    }
+    .fa-info-circle{
+      color:var(--mainWhite);
+      cursor: pointer;
+    }
+    .info a{
+      text-decoration: none;
+      color:var(--mainWhite);
+    }
+    
+    .upgrade-form{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width:70%;
+    }
+    .upgrade-input-field{
+      padding:1rem;
+      margin-bottom: 10px;
+      transition: var(--maingTransition);
+      font-size: 1em;
+    }
+    .upgrade-input-field:hover{
+      border:2px solid var(--mainGreen);
+    }
+    .upgrade-btn{
+      margin-top:12px;
+      width:30%;
+    }
+    
+    .btn{
+      padding:1rem 1.5rem;
+      border:none;
+      background:var(--mainGreen);
+      color:var(--mainWhite);
+      font-weight: bold;
+      letter-spacing: var(--mainSpacing);
+      transition:var(--maingTransition);
+      cursor: pointer;
+      margin-right:10px;
+      border-radius: 5px;
+    }
+    .btn:hover{
+      background:var(--mainWhite);
+      border:1px solid var(--mainGreen);
+      color:var(--mainGreen);
+    }
+    .description-text-container{
+      margin:10px 0px;
+      padding:1rem;
+    }
+    .description-text{
+      color:var(--mainBlack);
+      letter-spacing: var(--mainSpacing);
+      margin:10px;
+    }
+    .background-image{
+      position: absolute;
+      right: 0px;
+    }
+    /* end of styles for the ssl certificate container */
+    }
+    /* end of desktop styles */
+    /* ============================== */
+    /* mobile styles  */
+@media only screen and (max-width:400px){
+    /* styles for ssl certificate container */
+
+  .ssl-certificate-container{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+  }
+  .title-and-check-container{
+    display: flex;
+    flex-direction: column;
+    margin:10px 0px;
+    padding:1rem;
+  }
+  .title-and-check-container h2{
+    letter-spacing: var(--mainSpacing);
+    font-size:1em;
+    color:var(--mainBlack);
+  }
+  .title-and-check-container p{
+    font-size: .9rem;
+    letter-spacing: var(--mainSpacing);
+    color:var(--mainBlack);
+  }
+
+.checks{
+  padding:1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background:var(--mainGrey);
+  width:100%;
+  display: flex;
+
+}
+.checks radio,h3,p{
+  display:inline-block;
+}
+.checks h3,p{
+  color:var(--mainBlack);
+
+}
+.checks h3{
+  letter-spacing: var(--mainSpacing);
+}
+
+.div-style{
+  margin:10px 0;
+  padding:1rem;
+  text-align: center;
+}
+.div-style-title{
+  color:var(--mainBlack);
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 7px;
+  text-align: center;
+}
+.div-style-text{
+  color:var(--mainBlack);
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 10px;
+}
+
+.confirm-ownership{
+  background:var(--mainGrey);
+  width:100%;
+  padding:1rem 1.5rem;
+  margin:10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.confirm-ownership h4{
+  text-align: center;
+  color:var(--mainBlack);
+  margin-bottom:20px;
+  letter-spacing: var(--mainSpacing);
+}
+.info-container{
+  display:flex;
+}
+.info{
+  background:grey;
+  padding:1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.fa-info-circle{
+  color:var(--mainWhite);
+  cursor: pointer;
+  text-align: center;
+  font-size: 2rem;
+}
+.info a{
+  text-decoration: none;
+  color:var(--mainWhite);
+}
+
+.upgrade-form{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:100%;
+  margin:auto;
+}
+.mobile-pos{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.upgrade-input-field{
+  padding:1rem;
+  margin-bottom: 10px;
+  transition: var(--maingTransition);
+  font-size: 1em;
+}
+.upgrade-input-field:hover{
+  border:2px solid var(--mainGreen);
+}
+.upgrade-btn{
+  margin-top:12px;
+  width:30%;
+}
+
+.btn{
+  padding:1rem 1.5rem;
+  border:none;
+  background:var(--mainGreen);
+  color:var(--mainWhite);
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+  transition:var(--maingTransition);
+  cursor: pointer;
+  margin-right:10px;
+  border-radius: 5px;
+}
+.btn:hover{
+  background:var(--mainWhite);
+  border:1px solid var(--mainGreen);
+  color:var(--mainGreen);
+}
+.description-text-container{
+  margin:10px 0px;
+  padding:1rem;
+}
+.description-text{
+  color:var(--mainBlack);
+  letter-spacing: var(--mainSpacing);
+  margin:10px;
+}
+.background-image{
+  position: absolute;
+  right: 0px;
+}
+/* end of styles for the ssl certificate container */
+
+  .btn{
+    padding:1rem 1.5rem;
+    border:none;
+    background:var(--mainGreen);
+    color:var(--mainWhite);
+    font-weight: bold;
+    letter-spacing: var(--mainSpacing);
+    transition:var(--maingTransition);
+    cursor: pointer;
+    margin-right:10px;
+    border-radius: 5px;
+    width:100%;
+  }
+  .btn:hover{
+    background:var(--mainWhite);
+    border:1px solid var(--mainGreen);
+    color:var(--mainGreen);
+  }
+  .description-text-container{
+    margin:10px 0px;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .description-text{
+    color:var(--mainBlack);
+    letter-spacing: var(--mainSpacing);
+    margin:10px;
+    flex-wrap: wrap;
+
+  }
+  .background-image{
+    position: absolute;
+    right: 0px;
+  }
+/* end of styles for the ssl certificate container */
+}
+/* end of mobile styles */
+/* ======================================= */
+/* browser defaults styles resets */
+
+  /* style varibles */
+  :root{
+    --maingTransition:all 0.3s linear;
+    --mainSpacing:0.1rem;
+    --mainBlack:#2c2c2c;
+    --mainGrey:#ececec;
+    --mainWhite:#fff;
+    --mainGreen:#0ab361;
+  }
+  /* Float four columns side by side */
+  .column {
+    width: 35%;
+    height:100%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;    
+    background: #F2F1F1;
+    /* border: 1px solid #926262; */
+/* box-sizing: border-box; */
+border-radius: 5px;
+transition: 2s;
+margin: -12px 0;
+
+    
+  }
+  .card:hover{
+
+  }
+
+
+.capz{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin: 9px 16px;
+
+}
+
+p.tok {
+    margin-top: 24px;
+}
+
+p.space {
+    margin: 46px 0;
+}
+
+h3.rectangle {
+    background: #58BF8E;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 372px;
+}
+h3.rectangle:hover{
+    background:#fff;
+    color: #000;
+}
+
+@media screen and (max-width: 1198px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 16px;
+  }
+
+  h3.rectangle {
+    background: #58bf8e;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 900px;
+  }
+}
+@media screen and (max-width: 964px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 16px;
+  }
+
+  h3.rectangle {
+    background: #58bf8e;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 16px;
+  }
+  h3.rectangle {
+    background: #58bf8e;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 354px;
+  }
+  .capz {
+    margin: 0 -12px;
+  }
+}
+.general {
+  margin: 0px 80px;
+  margin-top: 30px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+h6 {
+  font-size: 105%;
+  margin-top: 35px;
+}
+
+.heading {
+  margin-bottom: 50px;
+}
+
+.form {
+  position: relative;
+  width: 70%;
+  left: 5%;
+  padding: px;
+  top: -20px;
+}
+
+label {
+  font-size: 85%;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: -5px;
+}
+
+.radios {
+  display: block;
+  position: ;
+  margin-top: 15px;
+  left: 4%;
+  margin-left: 5%;
+}
+
+.req h6 {
+  position: relative;
+  font-size: ;
+  top: -10px;
+}
+.req2 {
+  position: relative;
+  top: 10px;
+}
+
+.radio1 p {
+  position: absolute;
+  color: aqua;
+}
+
+span {
+  position: relative;
+  left: 40px;
+  color: #868686;
+}
+.background-image {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 16px;
+  }
+  h3.rectangle {
+    background: #58bf8e;
+    border-radius: 5px;
+    padding: 8px 31px;
+    transition: 2s;
+    color: #fff;
+    width: 284px;
+  }
+  .navbar-brand img {
+   display: none;
+ }
+.custom-radio .custom-control-input:checked~.custom-control-label::before,
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background-color: black;  /* green */
+    /* this bg image SVG is just a white circle, you can replace it with any valid SVG code */
+    border-radius: 50%;
+}

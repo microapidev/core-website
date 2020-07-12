@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 
+	 <meta charset="UTF-8" />
+
+    <!-- Optimized viewport for mobile -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- Website description -->
+    <meta name="description" content="Template name: HTML website template for any brand"/>
+    <meta name="keywords" content="interior design, HTML templates, interior design website"/>
+
+	<!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	 <!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<title>Micro API</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg">
+		<div class="container">
+		  <a class="navbar-brand" href="#">
+		  	<img class="logo-style" src="./assets/images/logo.png" alt="logo">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#"> <span class="dashboard-main" >Dashboard</span> <span class="sr-only">(current)</span></a>
+		      </li>
+		  	</ul>
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li class="nav-link"> <span style="color: white;">A.Ifedora<span><img src="./assets/images/arrow-down.png" alt="arrow-down"></span> </li>
+		      </ul>
+		  </div>
+		</div>
+	</nav>
+	<!-- Tabs -->
+	<nav class="pt-2">
+	 <div class="nav nav-tabs px-5 mx-5" id="nav-tab" role="tablist">
+	    <a class="nav-item nav-link active nav-two-links" style="background-color:  #E5E5E5;" id="nav-service-tab" data-toggle="tab" href="#nav-service" role="tab" aria-controls="nav-home" aria-selected="true">Services</a>
+	    <a class="nav-item nav-link nav-two-links" style="background-color:  #E5E5E5;" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Settings</a>
+	    <ul class="nav ml-auto nav-tabs">
+	      <li class="nav-item active">
+	        <form class="form-inline my-2 my-lg-0">
+		        <div class="input-group">
+			      <input class="form-control py-2 border-right-0 border inp-group" type="search" placeholder="Search">
+			      <div class="input-group-append">
+			          <div class="input-group-text addon" id="btnGroupAddon2"><i class="fa fa-search"></i></div>
+			      </div>
+			  	</div>
+	    	</form>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link pt-1" href="#"> <img src="./assets/images/help-circle.png"> </a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link pt-1 pr-5" href="#"><img src="./assets/images/settings.png"></a>
+	      </li>
+		</ul>
+	  </div>
+	</nav>
+	<div class="tab-content" id="nav-tabContent">
+	  <div class="tab-pane fade show active" id="nav-service" role="tabpanel" aria-labelledby="nav-service-tab">
+	  	<main>
+		<section>
+			<div class="container">
+				<h4 class="mt-5 head-text">Your APIS</h4>
+				<div class="row">
+					<div class="col-md-3 mt-3" >	
+						<img class="img-fluid" src="./assets/images/Group 117.png" style="width: 100%; height: 100%;" alt="key">		
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-1 text-center ml-3">
+											<img src="./assets/images/key.png" class="img-main" style="top: 10px;" alt="key">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Authentication API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches1">
+										  <label class="custom-control-label" for="customSwitches1"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Web</button>
+										  <button type="button" class="btn btn-button">Security</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-2 text-center ml-3">
+											<img src="./assets/images/email.png" class="img-main" style="top: 10px;" alt="key">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Email API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches2">
+										  <label class="custom-control-label" for="customSwitches2"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Email</button>
+										  <button type="button" class="btn btn-button">Communication</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-3 text-center ml-3">
+											<img src="./assets/images/excel.png" class="img-main" style="top: 10px;" alt="key">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Excel API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secerts and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches3">
+										  <label class="custom-control-label" for="customSwitches3"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Tools</button>
+										  <button type="button" class="btn btn-button">Utilities</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+				<div class="row">
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-4 text-center ml-3">
+											<img src="./assets/images/key.png" class="img-main" style="top: 10px;" alt="key">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">SMS API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches4">
+										  <label class="custom-control-label" for="customSwitches4"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Email</button>
+										  <button type="button" class="btn btn-button">Communication</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-4 text-center ml-3">
+											<img src="./assets/images/Vector (1).png" class="img-main" style="top: 10px;" alt="notification">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Notification API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches5">
+										  <label class="custom-control-label" for="customSwitches5"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Social</button>
+										  <button type="button" class="btn btn-button">Security</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-1 text-center ml-3">
+											<img src="./assets/images/Vector (2).png" class="img-main" style="top: 10px;" alt="comment">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Comment API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secerts and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches6">
+										  <label class="custom-control-label" for="customSwitches6"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Social</button>
+										  <button type="button" class="btn btn-button">Communication</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-2 text-center ml-3">
+											<img src="./assets/images/Vector (3).png" class="img-main" style="top: 10px;" alt="transaction">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Transaction API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches7">
+										  <label class="custom-control-label" for="customSwitches7"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Finance</button>
+										  <button type="button" class="btn btn-button">Management</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+				<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-3 text-center ml-3">
+											<img src="./assets/images/Vector (4).png" class="img-main" style="top: 10px;" alt="complaints">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Complaints API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches8">
+										  <label class="custom-control-label" for="customSwitches8"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Email</button>
+										  <button type="button" class="btn btn-button">Communication</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-2 text-center ml-3">
+											<img src="./assets/images/carbon_user-multiple.png" class="img-main" style="top: 10px;" alt="user">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">User Management API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches9">
+										  <label class="custom-control-label" for="customSwitches9"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Logistics</button>
+										  <button type="button" class="btn btn-button">Management</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-3 text-center ml-3">
+											<img src="./assets/images/Vector (5).png" class="img-main" style="top: 10px;" alt="key">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Store Management API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secerts and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches10">
+										  <label class="custom-control-label" for="customSwitches10"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Tools</button>
+										  <button type="button" class="btn btn-button">Utilities</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card">
+							<div class="row">
+								<div class="col-6 col-md-3">
+									<div class="ext-cont">
+										<div class="img-container-1 text-center ml-3">
+											<img src="./assets/images/flat-color-icons_invite.png" class="img-main" style="top: 10px;" alt="key">
+									 	</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-9">
+									<div class="card-body">
+									    <h5 class="card-title header mt-4">Invitation Service API</h5>
+									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
+									
+									<div class="mt-3">
+										<div class="custom-control custom-switch switch">
+										  <input type="checkbox" class="custom-control-input" id="customSwitches11">
+										  <label class="custom-control-label" for="customSwitches11"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
+										</div>
+									</div>
+									<div class="content-button mt-5">
+										  <button type="button" class="btn btn-button">Email</button>
+										  <button type="button" class="btn btn-button">Communication</button>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+				<span class="view">View All</span>
+				<h4 class="mt-5 pt-5 head-text">Available Micro APIS</h4>
+				<div class="row">
+					<div class="col-md-3 mt-3" >
+						<div class="card card-style">
+								<img class="mt-4" src="./assets/images/new_cloudinary_logo_square 1.png" alt="">
+							 <div class="card-body text-center">
+							    <h5 class="card-title heading">Cloudinary API</h5>
+							    <p class="card-text par-text">Description about the API</p>
+							    <a href="#" class="btn button">Add</a>
+							 </div>
+						</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card card-style">
+								<img class="mt-4" src="./assets/images/SG_Twilio_Lockup_Social.png" alt="">
+							 <div class="card-body text-center">
+							    <h5 class="card-title heading">SendGrid API</h5>
+							    <p class="card-text par-text">Description about the API</p>
+							    <a href="#" class="btn button">Add</a>
+							 </div>
+						</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card card-style">
+								<img class="mt-4" src="./assets/images/flutter_wave 1.png" alt="">
+							 <div class="card-body text-center">
+							    <h5 class="card-title heading">Flutterwave API</h5>
+							    <p class="card-text par-text">Description about the API</p>
+							    <a href="#" class="btn button">Add</a>
+							 </div>
+						</div>
+					</div>
+					<div class="col-md-3 mt-3" >
+						<div class="card card-style">
+								<img class="mt-4" src="./assets/images/image 1.png" alt="">
+							 <div class="card-body text-center">
+							    <h5 class="card-title heading">Cloudinary API</h5>
+							    <p class="card-text par-text">Description about the API</p>
+							    <a href="#" class="btn button">Add</a>
+							 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	  </div>
+	  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
+	  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+	</div>
+	
+	
+    <!-- All javascript at the bottom of the page for fast page load -->
+   <!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+

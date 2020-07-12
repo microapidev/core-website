@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+   <!-- include header.ejs -->
+  <%- include('../partials/head')-%>
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/usage.css">
+  <body>
+    <div class="second1">
+      <div class="first">
+        <!-- include nav.ejs -->
+        <%- include('../partials/nav')-%>
+      </div>
+</div>
+<section>
+  <div class="second">
+      <div class="first">
+         <!-- include nav.ejs -->
+        <%- include('../partials/nav_two')-%>
+      </div>
+  </div>
+  <section class="usage">
+      <div class="usage-1">
+        <p class="usage-text-1">Usage</p>
+      </div>
+
+      <div class="usage-2-3">
+        <div class="usage-2">
+          <div class="select">
+            <select name="date" id="date">
+              <option value="jun2020">Jun 2020</option>
+            </select>
+          </div>
+
+          <div class="sub">
+            <p class="usage-2-text-1">Note: All usage dates and times are in UTC. Storage and taxes are charged at the end of the month.</p>
+          </div>
+
+          <div class="usage-price-container">
+            <p class="usage-price-1">Total this month <span class="price">$0.00</span></p>
+            <p class="usage-price-2">included in your free trial</p>
+          </div>
+        </div>
+
+        <div class="usage-3">
+          <p class="usage-3-text-1">You have no usage data for this month</p>
+        </div>
+      </div>
+
+      <div class="usage-4">
+        <a href="#" class="usage-4">View All Product Usage</a>
+      </div>
+  </section>
+    <!-- Include script.ejs -->
+    <%- include('../partials/scripts') %>
+  </body>
+</html>

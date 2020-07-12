@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+       <!-- include header.ejs -->
+       <%- include('../partials/head')-%>
+    <link rel="stylesheet" href="css/bilings.css">
+</head>
+  <body>
+    <div class="second1">
+      <div class="first">
+           <!-- include nav.ejs -->
+          <%- include('../partials/nav')-%>
+      </div>
+  </div>
+
+    <div class="second">
+        <div class="first">
+             <!-- include nav.ejs -->
+              <%- include('../partials/nav_two')-%>
+        </div>
+    </div>
+    <div class="boarder">
+<div id="body-bill mt-5">
+    <p>Billing Overview</p>
+    <div class="bord" id="card">
+        <p>**** &nbsp;&nbsp;&nbsp; **** &nbsp;&nbsp;&nbsp;
+           **** &nbsp;&nbsp;&nbsp; 3820
+           <span class="righ"><button class="but" id="remv">Remove Card</button></span>
+        </p>
+    </div>
+    <p>Current Plan</p>
+    <div class="bord" id="prod">
+        <p>Production <br>
+            Business-focused apps, such as customer facing or internal
+            web apps APIs <br>
+            - Includes all Hobby features <br>
+            - Simple horizontal scalability <br>
+            - App metrics and threshold alerts <br>
+            - Preboot and zero-downtime deploys <br>
+            - Unlimited background workers
+            <span class="righ"><button class="but" id="upgrade">Upgrade</button></span>
+        </p>
+    </div>
+    <p>Invoices</p>
+    <div class="bord" id="month">
+        <p>Monthly Subscription | 25th-01-2019
+            <span class="righ">January's Payment</span>
+        </p>
+
+    </div>
+
+    <div id="img1d"><img id="img1" src="Ellipse 20.png" alt="img"></div>
+    <div id="img1d"><img id="img1" src="Vector (3).png" alt="img" ></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

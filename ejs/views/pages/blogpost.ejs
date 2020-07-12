@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome icons (free version)-->
+        <script src="./assets/font awsome/js/all.js"></script>
+        <!-- Google fonts -->
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- Core theme CSS-->
+        <link href="css/styles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/blog.css">
+        <link rel="stylesheet" href="css/signup.css">
+        <title> Blog </title>
+    </head>
+  <body>
+       <!-- Header -->
+       <header>
+            <!-- include header.ejs -->
+            <%- include('../partials/header')-%>
+        </header>
+
+
+     <!-- BLOG POST -->
+ <div class="container blog">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4">API and the future</h1>
+
+        <!-- Author -->
+        <p class="lead">
+          by
+          <a href="#">Team Justice League</a>
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Posted on July 2, 2020 at 12:00 AM</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="./assets/img/api.jpg" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+        <p class="lead">Take your global API Projects to the next level with a platform built for scale, speed, and deliverability.</p>
+
+        <p>Complete API solutions that will help you drive better outcomes for your customers and business, throughout the customer journey with rich set of APIs for managing People, Flow, Conversations and more.</p>
+
+        <p>We provide microservices for building, creating projects, file management , Sms/Email distribution and other functionalities by leveraging the end point of our documented and easy to use Microservices. We offer the very best services and also have topnotch security!</p>
+
+        <p>Journey with rich set of APIs for managing People, Flow, Conversations and more.</p>
+
+        <p>Get Started for Free - Join Thousands of Developers around the world using MicroApi for thier Projects and Companies</p>
+
+        <hr>
+
+        <!-- Comments Form -->
+        <div class="card my-4">
+          <h5 class="card-header">Leave a Comment:</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Single Comment -->
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle comment" src="./assets/img/kadet pic.jpeg" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">Paul</h5>
+            This is really educative!
+          </div>
+        </div>
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle comment" src="./assets/img/kadet pic.jpeg" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">Eghosa</h5>
+            Impressed
+          </div>
+        </div>
+
+        <!-- Comment with nested comments -->
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle comment" src="./assets/img/kadet pic.jpeg" alt="">
+          <div class="media-body">
+            <h5 class="mt-0">John</h5>
+            Glad I came across this!
+            <div class="media mt-4">
+              <img class="d-flex mr-3 rounded-circle comment" src="./assets/img/kadet pic.jpeg" alt="">
+              <div class="media-body">
+                <h5 class="mt-0">Joy</h5>
+                Can't wait to get started
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Search</h5>
+          <div class="card-body">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for...">
+              <span class="input-group-append">
+                <button class="btn btn-secondary" type="button">Go!</button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Categories</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Products</a>
+                  </li>
+                  <li>
+                    <a href="#">Excel Api</a>
+                  </li>
+                  <li>
+                    <a href="#">SMS Api</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Vibes Api</a>
+                  </li>
+                  <li>
+                    <a href="#">Tutorials</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- END OF BLOG-POST -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

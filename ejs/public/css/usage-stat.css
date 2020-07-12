@@ -1,0 +1,20 @@
+body,html{
+    background-color:rgb(233, 241, 241);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-right: 35px solid white;
+    border-left: 35px solid white;
+}
+
+#auth{
+    border-bottom: 4px solid purple;
+}
+#email{
+    border-bottom: 4px solid #d46f6f;
+}
+#sms{
+    border-bottom: 4px solid #02331b;
+
+}
+#excel{
+    border-bottom: 4px solid rgb(197, 230, 53);
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- include header.ejs -->
+  <%- include('../partials/head')-%>
+    <link rel="stylesheet" href="css/authapi.css">
+</head>
+  <body>
+    <div class="second1">
+        <div class="first">
+          <!-- include nav.ejs -->
+          <%- include('../partials/nav')-%>
+        </div>
+    </div>
+    <section>
+    <div class="second">
+        <div class="first">
+            <!-- include nav.ejs -->
+            <%- include('../partials/nav_two')-%>
+        </div>
+    </div>
+    <section class="auth-api py-3">
+        <div class="container">
+            <div class="auth-top pb-5">
+                <div class="auth-h py-3">
+                    <h2 id="auth-h2">Authentication API</h2>
+                </div>
+                <div class="auth-p py-2">
+                    <p>Authentication API allows you to implement two-factor authentication (2FA), password-less login and phone verification into your applications. It supports voice calls, SMS, software and hardware tokens as well as modern push notification authentication.</p>
+                </div>
+            </div>
+
+            <div class="applications py-3 row">
+                <div class="col-md-8">
+                    <div class="app">
+                        <h4>Applications</h4>
+                    </div>
+                    <div class="new-app my-3 py-3 row">
+                    <div class="project-name col-6">Project #FundmyLaptop</div>
+                    <div class="project-prop col-6">
+                        <div class="lang">Node.js</div>
+                        <div class="auth">Auth0</div>
+                        <div class="auth-icon">
+                            <img src="assets/topbox.svg" class="img-fluid imgi" id="box1">
+                            <img class="img-fluid imgi" src="assets/bottombox.svg " id="box2">
+                            <img class="img-fluid imgi dot" src="assets/Vector (4).svg " id="dot1">
+                            <img class="img-fluid imgi dot" src="assets/Vector (5).svg " id="dot2">
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="new-app my-3 py-3 row">
+                        <div class="project-name col-6">myCustomer</div>
+                        <div class="project-prop col-6">
+                            <div class="lang">Python</div>
+                            <div class="auth">Auth0</div>
+                            <div class="auth-icon">
+                                <img src="assets/topbox.svg" class="img-fluid imgi" id="box1">
+                                <img class="img-fluid imgi" src="assets/bottombox.svg " id="box2">
+                                <img class="img-fluid imgi dot" src="assets/Vector (4).svg " id="dot1">
+                                <img class="img-fluid imgi dot" src="assets/Vector (5).svg " id="dot2">
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="new-app my-3 py-3 row">
+                            <div class="project-name col-6 ">intern library</div>
+                            <div class="project-prop col-6">
+                                <div class="lang">php</div>
+                                <div class="auth">Auth0</div>
+                                <div class="auth-icon">
+                                    <img src="assets/topbox.svg" class="img-fluid imgi" id="box1">
+                                    <img class="img-fluid imgi" src="assets/bottombox.svg " id="box2">
+                                    <img class="img-fluid imgi dot" src="assets/Vector (4).svg " id="dot1">
+                                    <img class="img-fluid imgi dot" src="assets/Vector (5).svg " id="dot2">
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="new-app my-3 py-3 row">
+                                <div class="project-name col-6">govFund</div>
+                                <div class="project-prop col-6">
+                                    <div class="lang">Erlang</div>
+                                    <div class="auth">Auth0</div>
+                                    <div class="auth-icon">
+                                        <img src="assets/topbox.svg" class="img-fluid imgi" id="box1">
+                                        <img class="img-fluid imgi" src="assets/bottombox.svg " id="box2">
+                                        <img class="img-fluid imgi dot" src="assets/Vector (4).svg " id="dot1">
+                                        <img class="img-fluid imgi dot" src="assets/Vector (5).svg " id="dot2">
+                                    </div>
+                                </div>
+                                </div>
+
+                                <button class="btn my-4"><a href="#">View all</a></button>
+                                <button class="btn ml-3 my-4"><a href="#">New Application</a></button>
+
+                </div>
+                <div class="background">
+                    <img src="assets/Ellipse 20.svg" class="img-fluid d-none d-md-block" id="eclipse">
+                    <img src="assets/key.svg" class="img-fluid d-none d-md-block" id="key">
+                </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
