@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MicroAPI - Terms and conditions</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/terms-and-condition.css">
-    <link rel="stylesheet" href="assets/css/signup.css">
+    <link rel="stylesheet" href="css/terms-and-condition.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -14,40 +15,8 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid nav-bg">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <a href="#" class="navbar-brand pl-lg-5">
-                    <img src="./assets/img/signup/logo.png" alt="logo" class="img-fluid">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-                aria-controls="collapsibleNavbar"
-                aria-expanded="false"
-                aria-label="Toggle Navigation">
-                <!-- <img src="./img/signup/hamburger-menu-38.png" alt="hamburger-menu" class="img-fluid">    -->
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav" id="growth">
-                    <li class="nav-item pr-2 normal">
-                        <a class="nav-link" href="#">Home</a>
-                      </li>
-                      <li class="nav-item pr-2 normal">
-                        <a class="nav-link" href="#">About Us</a>
-                      </li>
-                      <li class="nav-item pr-2 normal">
-                        <a class="nav-link" href="#">Contact Us</a>
-                      </li>
-                      <li class="nav-item pr-2 normal">
-                        <a class="nav-link" href="#">Documentation</a>
-                      </li>
-                      <li class="nav-item abnormal pr-lg-4">
-                        <a class="nav-link" href="#">Sign In</a>
-                      </li>
-                </ul>
-            </div>
-            </nav>
-        </div>
+         <!-- include header.ejs -->
+         <%- include('../partials/header')-%>
     </header>
 
     
@@ -278,58 +247,15 @@
     </section>
     <!-- FOOTER -->
     <footer>
-        <div class="container-fluid">
-        <div class="row signup-footer">
-            <div class="col-10 col-sm-5 col-md-4 col-xl-3 mx-auto pt-5">
-            <img src="./assets/img/signup/footer-logo.png" alt="footer-logo" class="img-fluid">
-            </div>
-
-            <div class="col-10 col-sm-5 col-md-4 col-xl-2 mx-auto pt-4 pt-sm-5">
-            <p>Products</p>
-            <ul>
-                <li><a href="#">Authentication Api</a></li>
-                <li><a href="#">Excel Api</a></li>
-                <li><a href="#">SMS Api</a></li>
-                <li><a href="#">Vibes Api</a></li>
-            </ul>
-            </div>
-
-            <div class="col-10 col-sm-5 col-md-4 col-xl-2 mx-auto pt-4 pt-sm-5">
-            <p>Collaboration</p>
-            <ul>
-                <li><a href="#">Comments</a></li>
-                <li><a href="#">Track Changes</a></li>
-                <li><a href="#">Help Center</a></li>
-            </ul>
-            </div>
-
-            <div class="col-10 col-sm-5 col-md-6 col-xl-2 mx-auto pt-4 pt-sm-5">
-            <p>Support</p>
-            <ul>
-                <li><a href="#">MicroApi GitHub</a></li>
-                <li><a href="#">Documentation</a></li>
-                <li><a href="#">Help Center</a></li>
-            </ul>
-            </div>
-
-            <div class="col-10 col-sm-11 col-md-6 col-xl-2 mx-auto pt-4 pt-sm-5">
-            <p>Explore</p>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            </div>
-        </div>
-        <div class="row bottom-footer mt-2">
-            <p class="col-12 text-center pt-3"> All rights Reserved &copy;MicroApi</p>
-        </div>
-    </div>
+        <!-- include footer.ejs -->
+        <%- include('../partials/footer')-%>
     </footer>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <!-- Script start -->
+    <!-- include script.ejs -->
+    <%- include('../partials/scripts')-%>
+    <!-- Script end -->
+    
     <script src="assets/js/scroll-to-top.js"></script>
 </body>
 </html>

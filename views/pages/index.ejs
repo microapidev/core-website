@@ -1,104 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MicroApi</title>
-
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-
+    <!-- icon -->
+    <link rel="shortcut icon" href="/img/layers.png" type="image/x-icon"/>
+ 
+    <!-- google font  -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    
     <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
-      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
-      crossorigin="anonymous"
-    />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"/> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   
+    
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
 
     <!-- css link -->
-    <link rel="stylesheet" href="css/css/responsive.css" />
-    <link rel="stylesheet" href="css/css/index.css" />
-    <link rel="stylesheet" href="css/signup.css" />
-
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
+  
   <body>
     <header>
-      <div class="container-fluid nav-bg">
-        <nav class="navbar navbar-expand-md navbar-light">
-          <a href="#" class="navbar-brand pl-lg-5">
-            <img src="img/signup/logo.png" alt="logo" class="img-fluid" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar"
-            aria-controls="collapsibleNavbar"
-            aria-expanded="false"
-            aria-label="Toggle Navigation"
-          >
-            <!-- <img src="./img/signup/hamburger-menu-38.png" alt="hamburger-menu" class="img-fluid">    -->
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav" id="growth">
-              <li class="nav-item pr-2 normal">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item pr-2 normal">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item pr-2 normal">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item pr-2 normal">
-                <a class="nav-link" href="#">Documentation</a>
-              </li>
-              <li class="nav-item abnormal pr-lg-4">
-                <a class="nav-link" href="#">Sign In</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+        <!-- include header.ejs -->
+        <%- include('../partials/header')-%>
     </header>
 
     <article>
-      <!-- header -->
-      <!-- <header class="shadow-sm">
-      <nav id="navbar" class="navbar">
-        <div class="inner__content">
-
-          <p class="nav__brand">
-            <img src="assets/img/img/logo.png" alt="brand logo" class="navbrand">
-          </p>
-          
-          <ul class="nav-menu">
-            <li class="nav-list"><a href="">Home</a></li>
-            <li class="nav-list"><a href="">About Us</a></li>
-            <li class="nav-list"><a href="">Contact Us</a></li>
-            <li class="nav-list"><a href="">Documentation</a></li>
-            
-            <div class="float-right d-flex align-items-center nav__btn">
-              <li><button class="btn btn-link" type="button">Sign in</button></li>
-              <li><button class="btn btn-light" type="button">Sign up</button></li>
-            </div>  
-          </ul>
-
-          <div class="burger">
-            <span class="line"></span>
-            <span class="line blue"></span>
-          </div>
-        </div>
-      </nav>
-    </header> -->
-
+  
       <!-- first section -->
       <section class="first__section w-100 h-100">
         <div class="inner__first-section">
@@ -322,8 +259,7 @@
                     such a way that you're up to speed and running
                   </p>
 
-                  <button class="btn btn-content mt-3" type="button">
-                    Documentation
+                  <button class="btn btn-content mt-3" type="button"><a href="/documentation">Documentation</a>
                   </button>
                 </div>
               </div>
@@ -332,52 +268,11 @@
         </section>
       </main>
 
-      <footer class="footer w-100 h-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 mb-5">
-              <img src="img/img/logo (1).png" alt="" />
-            </div>
-            <div class="col-lg-4 footer-1 col-md-12 mb-3">
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <h3 class="footer__text-lg mb-3">Products</h3>
-
-                  <p class="footer__text-sm">
-                    <a href="#">Authentication Api</a>
-                  </p>
-                  <p class="footer__text-sm"><a href="#">Excel Api </a></p>
-                  <p class="footer__text-sm"><a href="#">SMS Api</a></p>
-                  <p class="footer__text-sm"><a href="#">Vibes Api</a></p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <h3 class="footer__text-lg mb-3">Collaboration</h3>
-                  <p class="footer__text-sm"><a href="#">Comments</a></p>
-                  <p class="footer__text-sm"><a href="#"> Track Changes </a></p>
-                  <p class="footer__text-sm"><a href="#"> Help Center </a></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-12 footer-1">
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                  <h3 class="footer__text-lg mb-3">Support</h3>
-                  <p class="footer__text-sm"><a href="#">MicroApi GitHub</a></p>
-                  <p class="footer__text-sm"><a href="#"> Documentation</a></p>
-                  <p class="footer__text-sm"><a href="#"> Help Center</a></p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                  <h3 class="footer__text-lg mb-3">Explore</h3>
-                  <p class="footer__text-sm"><a href="#">Contact Us</a></p>
-                  <p class="footer__text-sm"><a href="#"> About Us </a></p>
-                  <p class="footer__text-sm"><a href="#"> Blog</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+       <!-- Footer -->
+   <footer>
+    <!-- include footer.ejs -->
+    <%- include('../partials/footer')-%>
+  </footer>
     </article>
 
     <script src="js/home.js"></script>
