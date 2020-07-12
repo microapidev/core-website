@@ -1,0 +1,174 @@
+
+:root {
+    --main-page-color: #FFFFFF;
+    --main-font-color: #010216;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif !important;
+    font-style: normal;
+    background: #F5F7F6 !important;
+    overflow-x: hidden;
+}
+/* header */
+.nav-bg {
+    background: var(--main-font-color);
+}
+
+.navbar {
+    padding: .8rem !important;
+    text-align: center;
+}
+
+.navbar-toggler {
+    background: var(--main-page-color) !important;
+}
+
+ul {
+    list-style: none;
+}
+
+ a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: var(--main-page-color) !important;
+}
+/* main content */
+.container {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.row .grid-margin .centered {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.search-field input {
+    height: 50px;
+    border: 0.5px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.search-field .btn-primary {
+    background-color: #67A766;
+    height: 50px;
+    color: var(--main-page-color);
+    width: 50%;
+    border: 0.5px solid #67A766;
+}
+.search-field .btn-primary:hover {
+    color: #000;
+    background-color: #67A766;
+    border: 0.5px solid #67A766;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #fff !important;
+    border-radius: 0;
+    box-shadow: 0px 10px 15px 5px rgba(230, 234, 236, 0.35) !important;
+}
+.accordion .card {
+    margin-bottom: .75rem;
+    
+    border-radius: .25rem;
+}
+.accordion .card .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+.accordion .card p {
+    font-weight: 300;
+    font-size: 16px;
+}
+.grid-margin {
+    margin-bottom: 0.625rem;
+}
+.accordion .card .card-header a[aria-expanded="true"]:before {
+    content: "\F374";
+}
+.accordion .card .card-header a:before {
+    font-family: "Poppins";
+    position: absolute;
+    right: 7px;
+    top: 0;
+    font-size: 18px;
+    display: block;
+}
+.accordion .card .card-header a[aria-expanded="false"]:before {
+    content: "\F415";
+}
+/* footer */
+footer {
+    background: var(--main-page-color);
+    margin-top: 8px;
+}
+
+.signup-footer img {
+    padding-left: 40px;
+}
+
+.signup-footer p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.signup-footer a {
+    color: var(--main-font-color);
+}
+
+.bottom-footer {
+    background: #F5F7F6;
+    height: 54px;
+}
+
+@media all and (max-width: 340px) {
+    .nav-bg {
+        padding: 0;
+    }
+}
+@media all and (min-width: 768px) {
+    .collapse {
+        margin-left: 0;
+    }
+
+    #growth {
+        width: 100%;
+        display: flex;
+    }
+
+    .normal {
+        flex-grow: 1;
+    }
+
+    .abnormal {
+        flex-grow: 3;
+        text-align: right;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .navbar-brand {
+        margin-left: 120px !important;
+    }
+
+    .signup-footer img {
+        position: relative;
+        top: 45%;
+        transform: translateY(-55%);
+    }
+}

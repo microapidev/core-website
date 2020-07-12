@@ -1,0 +1,533 @@
+.first{
+    margin-left:50px;
+    margin-right: 120px;
+}
+.second{
+    background: #58BF8E
+}
+.second1{
+  background:black;
+}
+
+
+.img1{
+    margin-left: 30px;
+}
+
+.four{
+    background-image: url(./Vector\ \(8\).png) right !important;
+}
+#one{
+    background: url(./Vector\ \(8\).png) right no-repeat;
+    background-color: white ;
+    background-position-x: 150px;
+    padding: 5px 5px;
+    
+}
+.five{
+    font-size: 100px !important;
+}
+a:hover{
+    border-bottom: 2px solid white !important;
+}
+
+
+
+@media(max-width:375px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .img1{
+        margin-left: 10px;
+    }
+}
+
+
+
+@media(min-width:376px) and (max-width:500px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+@media(min-width:501px) and (max-width:768px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media(min-width:769px) and (max-width:1200px){
+    .first{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background: #ffffff;
+  background-image: url(images/Ellipse\ 20.png), url(images/Vector.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 380px, 250px;
+}
+section.usage{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 100px;
+}
+p.usage-text-1{
+  font-family: 'Roboto';
+  font-size: 1.6rem;
+  color: #000000;
+}
+div.usage-2-3{
+  padding: 5px 0 5px 0;
+  background: #F6F6F6;
+}
+div.usage-2{
+  display: grid;
+  grid-template-columns: 0.6fr 1fr 0.6fr;
+  grid-template-rows: 1fr;
+  grid-gap: 50px;
+  place-items: center right;
+  padding: 10px 60px 5px 60px;
+}
+div.select{
+  grid-column: 1/1;
+  grid-row: 1/1;
+  place-self: center left;
+}
+select{
+  background: #E6E6E6;
+  border: none;
+  padding: 5px 10px;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  color: #000000;
+}
+p.usage-2-text-1{
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000000;
+}
+div.usage-price-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+p.usage-price-1{
+  font-family: 'Roboto';
+  font-size: 1rem;
+  color: #000000;
+}
+span.price{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #58BF8E;
+  margin-left: 10px;
+}
+p.usage-price-2{
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  color: #000000;
+}
+div.usage-3{
+  padding: 10px 60px;
+  border-top: 2px solid #ECECEC;
+}
+p.usage-3-text-1{
+  font-family: 'Roboto';
+  font-size: 1.3rem;
+  color: #000000;
+}
+div.usage-4{
+  margin: 50px 0;
+}
+a.usage-4{
+  font-family: 'Roboto';
+  font-size: 1rem;
+  color: #58BF8E;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1282px){
+  div.usage-2{
+    grid-gap: 30px;
+  }
+  p.usage-text-1{
+    font-size: 1.6rem;
+  }
+  select{
+    font-size: 1.2rem;
+  }
+  p.usage-2-text-1{
+    font-size: 1.1rem;
+  }
+  p.usage-price-1{
+    font-size: 1.1rem;
+  }
+  span.price{
+    font-size: 1.5rem;
+  }
+  p.usage-price-2{
+    font-size: 1rem;
+  }
+  a.usage-4{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  div.usage-2{
+    grid-template-columns: 0.4fr 1fr 0.6fr;
+  }
+  p.usage-price-2{
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 738px){
+  body{
+    height: 100%;
+    background-size: 230px, 100px;
+  }
+  section.usage{
+    margin: 20px;
+  }
+  div.usage-2{
+    grid-template-columns: 0.3fr 1fr 0.5fr;
+    grid-gap: 20px;
+    padding: 5px 20px;
+  }
+  div.usage-3{
+    padding: 10px 20px;
+  }
+  p.usage-text-1{
+    font-size: 1.4rem;
+  }
+  p.usage-2-text-1{
+    font-size: 0.9rem;
+  }
+  p.usage-price-1{
+    font-size: 0.9rem;
+  }
+  span.price{
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+  p.usage-price-2{
+    font-size: 0.8rem;
+  }
+  p.usage-3-text-1{
+    font-size: 1rem;
+  }
+  a.usage-4{
+  font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 668px){
+  body{
+    height: 100%;
+    background-size: 230px, 100px;
+  }
+  section.usage{
+    margin: 20px;
+  }
+  div.usage-2{
+    grid-template-columns: 0.3fr 1fr 0.57fr;
+    grid-gap: 20px;
+    padding: 5px 20px;
+  }
+  div.usage-3{
+    padding: 10px 20px;
+  }
+  p.usage-text-1{
+    font-size: 1.4rem;
+  }
+  p.usage-2-text-1{
+    font-size: 0.9rem;
+  }
+  p.usage-price-1{
+    font-size: 0.9rem;
+  }
+  span.price{
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+  p.usage-price-2{
+    font-size: 0.8rem;
+  }
+  p.usage-3-text-1{
+    font-size: 1rem;
+  }
+  a.usage-4{
+  font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 642px){
+  body{
+    height: 100%;
+    background-size: 230px, 100px;
+  }
+  section.usage{
+    margin: 20px;
+  }
+  div.usage-2{
+    grid-template-columns: 0.3fr 1fr 0.57fr;
+    grid-gap: 20px;
+    padding: 5px 20px;
+  }
+  div.usage-3{
+    padding: 10px 20px;
+  }
+  p.usage-text-1{
+    font-size: 1.4rem;
+  }
+  p.usage-2-text-1{
+    font-size: 0.9rem;
+  }
+  p.usage-price-1{
+    font-size: 0.9rem;
+  }
+  span.price{
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+  p.usage-price-2{
+    font-size: 0.8rem;
+  }
+  p.usage-3-text-1{
+    font-size: 1rem;
+  }
+  a.usage-4{
+  font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 569px){
+  body{
+    height: 100%;
+    background-size: 230px, 100px;
+  }
+  section.usage{
+    margin: 20px;
+  }
+  div.usage-2{
+    grid-template-columns: 0.3fr 1fr 0.53fr;
+    grid-gap: 20px;
+    padding: 5px 20px;
+  }
+  div.usage-3{
+    padding: 10px 20px;
+  }
+  p.usage-text-1{
+    font-size: 1.3rem;
+  }
+  p.usage-2-text-1{
+    font-size: 0.9rem;
+  }
+  p.usage-price-1{
+    font-size: 0.9rem;
+  }
+  span.price{
+    font-size: 1.3rem;
+    margin-left: 0;
+  }
+  p.usage-price-2{
+    font-size: 0.7rem;
+  }
+  p.usage-3-text-1{
+    font-size: 1rem;
+  }
+  a.usage-4{
+  font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 414px){
+  section.usage{
+    margin: 0;
+  }
+  div.usage-2{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    place-items: center;
+    padding: 10px 30px;
+  }
+  div.select{
+    place-self: center;
+  }
+  p.usage-text-1{
+    font-size: 1.4rem;
+  }
+  select{
+    font-size: 1rem;
+  }
+  p.usage-2-text-1{
+    font-size: 1rem;
+  }
+  p.usage-price-1{
+    font-size: 1rem;
+  }
+  span.price{
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  p.usage-price-2{
+    font-size: 1rem;
+  }
+  p.usage-3-text-1{
+    font-size: 1rem;
+    text-align: center;
+  }
+  a.usage-4{
+  font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 376px){
+  section.usage{
+    margin: 0;
+  }
+  div.usage-2{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    place-items: center;
+    padding: 10px 30px;
+  }
+  div.select{
+    place-self: center;
+  }
+  p.usage-text-1{
+    font-size: 1.4rem;
+  }
+  select{
+    font-size: 1rem;
+  }
+  p.usage-2-text-1{
+    font-size: 1rem;
+  }
+  p.usage-price-1{
+    font-size: 1rem;
+  }
+  span.price{
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  p.usage-price-2{
+    font-size: 1rem;
+  }
+  p.usage-3-text-1{
+    font-size: 1rem;
+  }
+  a.usage-4{
+  font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 362px){
+  section.usage{
+    margin: 0;
+  }
+  div.usage-2{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    place-items: center;
+    padding: 10px 30px;
+  }
+  div.select{
+    place-self: center;
+  }
+  p.usage-text-1{
+    font-size: 1.4rem;
+  }
+  select{
+    font-size: 1rem;
+  }
+  p.usage-2-text-1{
+    font-size: 1.05rem;
+  }
+  p.usage-price-1{
+    font-size: 1rem;
+  }
+  span.price{
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  p.usage-price-2{
+    font-size: 1rem;
+  }
+  p.usage-3-text-1{
+    font-size: 1rem;
+  }
+  a.usage-4{
+  font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 322px){
+  section.usage{
+    margin: 0;
+  }
+  div.usage-2{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    place-items: center;
+    padding: 10px 20px;
+  }
+  div.select{
+    place-self: center;
+  }
+  p.usage-text-1{
+    font-size: 1.4rem;
+  }
+  select{
+    font-size: 1rem;
+  }
+  p.usage-2-text-1{
+    font-size: 1.05rem;
+  }
+  p.usage-price-1{
+    font-size: 1rem;
+  }
+  span.price{
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  p.usage-price-2{
+    font-size: 1rem;
+  }
+  p.usage-3-text-1{
+    font-size: 1rem;
+  }
+  a.usage-4{
+  font-size: 1rem;
+  }
+}
+
+
+

@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 5.7em;
+  color: #ffffff;
+  background: #010216;
+  /* padding: .6em 0em; */
+}
+
+.navbar .inner__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+} 
+
+.navbar .nav__brand {
+  
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 3.5rem;
+  width: 100%;
+}
+
+.navbar .right {
+  justify-self:  right;
+}
+
+.navbar ul li {
+  margin-left: 2rem;
+}
+
+.navbar li a, .btn-link {
+  color: #ffffff;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #58BF8E;
+}
+
+li a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #58BF8E;
+  padding-bottom: 0.5rem;
+  transition: .3s ease-in-out;
+}
+
+.burger {
+  display: none;
+}
+
+/* BURGER MENU FOR SMALLER DEVICE */
+.burger {
+  cursor: pointer;
+  display: none;
+  z-index: 1;  
+}
+
+.burger .line:first-child {
+  width: 12px;
+}
+
+.burger .line {
+  display: block;
+  background: #58BF8E;
+  height: 2px;
+  width: 25px;
+  margin: 12px;
+  transition: all 0.5s ease-in-out;
+}
+
+.burger .blue {
+  background: #ffffff;
+}
+
+/* sections */
+
+/* utilities */
+
+.inner__container {
+  width: 100%;
+}
+
+.btn-content {
+  padding: .8em 1.6em;
+  background: #449342;
+  opacity: 0.8;
+  box-shadow: 0px 0px 10px rgba(68, 147, 66, 0.25);
+  border-radius: 5px;
+  border: 1px solid #449342;
+  color: #ffffff;
+  outline: none !important;
+}
+
+
+
+/* first section */
+.first__section {
+  padding-top: 6em;
+}
+
+
+.leading__text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3em;
+  line-height: 64px;
+}
+
+.supportn__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.content__button {
+  align-content: center;
+}
+
+.content__button .content__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 52px;
+  color: #010216;
+}
+
+/* second section */
+.second__section .vert-text {
+  width: 100%;
+  padding: 0rem 1.2rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #16172D;
+}
+
+.second__section p {
+  width: 26em;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+/* third secion */ 
+.inner__third-section {
+  width: 100%;
+  height: 100%;
+  padding: 2em 2em 0em 2em;
+}
+
+.third__section-img {
+  margin-bottom: 3em;
+}
+
+.section-content {
+  width: 100%;
+  height: 100%;
+  padding-right: 3em;
+}
+
+.card {
+  width: 21.625em !important;
+  height: 26.69em !important;
+
+  background: #FFFFFF !important;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 5px !important;
+}
+
+
+/* fourth section */
+.fourth__section-content {
+  margin-bottom: 8em;
+}
+.fourth__section  .top__content{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  padding: 3em 0em;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+/* fifth section */
+
+.fifth__section {
+  background: #16172D;
+  color: #ffffff;
+  padding: 4em 0em 2em 0em;
+}
+
+.fifth__section .text__lg {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 2.3em;
+  line-height: 55px;
+}
+
+.fifth__section .text__sm {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 31px;
+}
+
+/* footer */
+.footer {
+  background: #ffffff;
+  padding: 6em 0em 3em 0em;
+}
+
+.footer__text-lg {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #010216;
+}
+
+.footer__text-sm a{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #010216cc;
+
+}
+
+.footer-1 {
+  justify-content: space-between;
+}
