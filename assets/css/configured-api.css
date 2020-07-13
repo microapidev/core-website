@@ -1,88 +1,91 @@
+.dropdown-menu {
+  left: -50% !important;
+}
+
+.dropdown-item:hover {
+  background-color: #31aa52 !important;
+}
+
 .api-link {
-    color: #16172D;
+  color: #16172d;
 }
 
 .form-inline .form-control:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .form-group {
-    background-color: #16172D;
+  background-color: #16172d;
 }
 
 .form-control {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 .form-inline .form-control:not(:placeholder-shown) {
-    background-color: #31AA52 !important;
-    color: #fff !important;
+  background-color: #31aa52 !important;
+  color: #fff !important;
 }
 
 ::placeholder {
-    color: green !important;
+  color: green !important;
 }
 
 .search__btn {
-    color: #31AA52 !important;
+  color: #31aa52 !important;
 }
 
-
-
 .api {
-    align-items: center;
-    margin: 1rem;
-    flex: 1 0 320px;
+  align-items: center;
+  margin: 1rem;
+  flex: 1 0 320px;
 }
 
 #add {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .api__title {
-    color: #31AA52;
-    font-size: 1.3rem;
+  color: #31aa52;
+  font-size: 1.3rem;
 }
-
-
 
 .toggle-group {
-    border-radius: 20px !important;
+  border-radius: 20px !important;
 }
-
 
 .toggle,
 .toggle-handle {
-    border-radius: 20px !important;
+  border-radius: 20px !important;
 }
 
 .toggle-handle {
-    border-radius: 50% !important;
+  border-radius: 50% !important;
 }
 
 .api__list {
-    background: rgba(49, 170, 82, 0.25);
-    border-radius: 2px;
-    color: #31AA52;
+  background: rgba(49, 170, 82, 0.25);
+  border-radius: 2px;
+  color: #31aa52;
 }
 
 .api__title {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .api__list,
 .api__text {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .nav-tabs .nav-link:hover {
-    border: none !important;
-    border-bottom: solid 2px #31AA52 !important;
+  border: none !important;
+  border-bottom: solid 2px #31aa52 !important;
 }
 
 .nav-tabs .nav-link.active {
-    color: #31AA52 !important;
-    background: transparent !important;
-    border: none;
-    border-bottom: solid 2px #31AA52;
+  color: #31aa52 !important;
+  background: transparent !important;
+  border: none;
+  border-bottom: solid 2px #31aa52;
 }
