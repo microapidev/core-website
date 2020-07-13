@@ -1,11 +1,22 @@
 const express = require('express');
 const user = require('../controllers/usercontroller');
+const {
+  home,
+  documentation,
+  signup,
+  signIn,
+  blog,
+  blogpost,
+} = require('../controllers/home');
 
 const appRoute = express.Router();
 
-appRoute.get('/', user.isAuthenticated, (req, res) => {
-  res.render('pages/homepage', { pageName: 'Home' });
-});
+appRoute.get('/', home);
+appRoute.get('/documentation', documentation);
+appRoute.get('/sign-up', signup);
+appRoute.get('/sign-in', signIn);
+appRoute.get('/blog', blog);
+appRoute.get('/blog-post', blogpost);
 
 appRoute.get('/dashboard', user.isAuthenticated, (req, res) => {
   res.render('index', { variable: 'Hello Guys' });

@@ -3,11 +3,11 @@ require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const appRoute = require('./routes/newroutes');
+const appRoute = require('./routes/routes');
 
 const app = express();
 // const cors = require('cors');
-const mainRoute = require('./routes/route');
+const mainRoute = require('./routes/privateRoute');
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
