@@ -1,0 +1,92 @@
+.api-link {
+    color: #16172D;
+}
+
+.text-color {
+     color: #31AA52 !important;
+}
+
+.form-inline .form-control:focus {
+    box-shadow: none !important;
+}
+
+.form-group {
+    background-color: #16172D;
+}
+
+.form-control {
+    color: #fff !important;
+}
+
+.form-inline .form-control:not(:placeholder-shown) {
+    background-color: #31AA52 !important;
+    color: #fff !important;
+}
+
+::placeholder {
+    color: green !important;
+}
+
+.search__btn {
+    color: #31AA52 !important;
+}
+
+
+
+.api {
+    align-items: center;
+    margin: 1rem;
+    flex: 1 0 290px;
+}
+
+#add {
+    cursor: pointer;
+}
+
+.api__title {
+    color: #31AA52;
+    font-size: 1.3rem;
+}
+
+
+
+.toggle-group {
+    border-radius: 20px !important;
+}
+
+
+.toggle,
+.toggle-handle {
+    border-radius: 20px !important;
+}
+
+.toggle-handle {
+    border-radius: 50% !important;
+}
+
+.api__list {
+    background: rgba(49, 170, 82, 0.25);
+    border-radius: 2px;
+    color: #31AA52;
+}
+
+.api__title {
+    font-family: 'Poppins', sans-serif;
+}
+
+.api__list,
+.api__text {
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-tabs .nav-link:hover {
+    border: none !important;
+    border-bottom: solid 2px #31AA52 !important;
+}
+
+.nav-tabs .nav-link.active {
+    color: #31AA52 !important;
+    background: transparent !important;
+    border: none;
+    border-bottom: solid 2px #31AA52;
+}
