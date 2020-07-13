@@ -1,479 +1,258 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	 
-	 <meta charset="UTF-8" />
-
-    <!-- Optimized viewport for mobile -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-
-    <!-- Website description -->
-    <meta name="description" content="Template name: HTML website template for any brand"/>
-    <meta name="keywords" content="interior design, HTML templates, interior design website"/>
-
-	<!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	 <!-- CSS only -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-
-	<title>Micro API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroAPI Dashboard</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <!-- Toggle Button -->
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
 </head>
+
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg">
-		<div class="container">
-		  <a class="navbar-brand" href="#">
-		  	<img class="logo-style" src="./assets/images/logo.png" alt="logo">
-		  </a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
+    <header class="row m-0 p-0 d-flex flex-row justify-content-between align-items-center px-3 px-md-5"
+        style="height:3.125rem;background: #16172D;">
+        <nav class="w-100 navbar navbar-expand-lg navbar-light justify-content-between p-0"
+            style="background-color: #16172D;z-index:1;">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.svg" alt="Micro Api Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#"> <span class="dashboard-main" >Dashboard</span> <span class="sr-only">(current)</span></a>
-		      </li>
-		  	</ul>
-		      <ul class="nav navbar-nav navbar-right">
-		      	<li class="nav-link"> <span style="color: white;">A.Ifedora<span><img src="./assets/images/arrow-down.png" alt="arrow-down"></span> </li>
-		      </ul>
-		  </div>
-		</div>
-	</nav>
-	<!-- Tabs -->
-	<nav class="pt-2">
-	 <div class="nav nav-tabs px-5 mx-5" id="nav-tab" role="tablist">
-	    <a class="nav-item nav-link active nav-two-links" style="background-color:  #E5E5E5;" id="nav-service-tab" data-toggle="tab" href="#nav-service" role="tab" aria-controls="nav-home" aria-selected="true">Services</a>
-	    <a class="nav-item nav-link nav-two-links" style="background-color:  #E5E5E5;" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Settings</a>
-	    <ul class="nav ml-auto nav-tabs">
-	      <li class="nav-item active">
-	        <form class="form-inline my-2 my-lg-0">
-		        <div class="input-group">
-			      <input class="form-control py-2 border-right-0 border inp-group" type="search" placeholder="Search">
-			      <div class="input-group-append">
-			          <div class="input-group-text addon" id="btnGroupAddon2"><i class="fa fa-search"></i></div>
-			      </div>
-			  	</div>
-	    	</form>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link pt-1" href="#"> <img src="./assets/images/help-circle.png"> </a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link pt-1 pr-5" href="#"><img src="./assets/images/settings.png"></a>
-	      </li>
-		</ul>
-	  </div>
-	</nav>
-	<div class="tab-content" id="nav-tabContent">
-	  <div class="tab-pane fade show active" id="nav-service" role="tabpanel" aria-labelledby="nav-service-tab">
-	  	<main>
-		<section>
-			<div class="container">
-				<h4 class="mt-5 head-text">Your APIS</h4>
-				<div class="row">
-					<div class="col-md-3 mt-3" >	
-						<img class="img-fluid" src="./assets/images/Group 117.png" style="width: 100%; height: 100%;" alt="key">		
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-1 text-center ml-3">
-											<img src="./assets/images/key.png" class="img-main" style="top: 10px;" alt="key">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Authentication API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches1">
-										  <label class="custom-control-label" for="customSwitches1"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Web</button>
-										  <button type="button" class="btn btn-button">Security</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-2 text-center ml-3">
-											<img src="./assets/images/email.png" class="img-main" style="top: 10px;" alt="key">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Email API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches2">
-										  <label class="custom-control-label" for="customSwitches2"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Email</button>
-										  <button type="button" class="btn btn-button">Communication</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-3 text-center ml-3">
-											<img src="./assets/images/excel.png" class="img-main" style="top: 10px;" alt="key">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Excel API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secerts and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches3">
-										  <label class="custom-control-label" for="customSwitches3"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Tools</button>
-										  <button type="button" class="btn btn-button">Utilities</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-				<div class="row">
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-4 text-center ml-3">
-											<img src="./assets/images/key.png" class="img-main" style="top: 10px;" alt="key">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">SMS API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches4">
-										  <label class="custom-control-label" for="customSwitches4"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Email</button>
-										  <button type="button" class="btn btn-button">Communication</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-4 text-center ml-3">
-											<img src="./assets/images/Vector (1).png" class="img-main" style="top: 10px;" alt="notification">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Notification API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches5">
-										  <label class="custom-control-label" for="customSwitches5"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Social</button>
-										  <button type="button" class="btn btn-button">Security</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-1 text-center ml-3">
-											<img src="./assets/images/Vector (2).png" class="img-main" style="top: 10px;" alt="comment">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Comment API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secerts and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches6">
-										  <label class="custom-control-label" for="customSwitches6"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Social</button>
-										  <button type="button" class="btn btn-button">Communication</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-2 text-center ml-3">
-											<img src="./assets/images/Vector (3).png" class="img-main" style="top: 10px;" alt="transaction">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Transaction API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches7">
-										  <label class="custom-control-label" for="customSwitches7"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Finance</button>
-										  <button type="button" class="btn btn-button">Management</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-				</div>
-				<div class="row">
-				<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-3 text-center ml-3">
-											<img src="./assets/images/Vector (4).png" class="img-main" style="top: 10px;" alt="complaints">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Complaints API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches8">
-										  <label class="custom-control-label" for="customSwitches8"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Email</button>
-										  <button type="button" class="btn btn-button">Communication</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-2 text-center ml-3">
-											<img src="./assets/images/carbon_user-multiple.png" class="img-main" style="top: 10px;" alt="user">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">User Management API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches9">
-										  <label class="custom-control-label" for="customSwitches9"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Logistics</button>
-										  <button type="button" class="btn btn-button">Management</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-3 text-center ml-3">
-											<img src="./assets/images/Vector (5).png" class="img-main" style="top: 10px;" alt="key">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Store Management API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secerts and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches10">
-										  <label class="custom-control-label" for="customSwitches10"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Tools</button>
-										  <button type="button" class="btn btn-button">Utilities</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card">
-							<div class="row">
-								<div class="col-6 col-md-3">
-									<div class="ext-cont">
-										<div class="img-container-1 text-center ml-3">
-											<img src="./assets/images/flat-color-icons_invite.png" class="img-main" style="top: 10px;" alt="key">
-									 	</div>
-									</div>
-								</div>
-								<div class="col-12 col-md-9">
-									<div class="card-body">
-									    <h5 class="card-title header mt-4">Invitation Service API</h5>
-									    <p class="card-text body-text"> Configure API Keys, Secrets and other details</p>
-									
-									<div class="mt-3">
-										<div class="custom-control custom-switch switch">
-										  <input type="checkbox" class="custom-control-input" id="customSwitches11">
-										  <label class="custom-control-label" for="customSwitches11"><img  class="pb-1" src="./assets/images/settings.png" style="height: 25px;"></label>
-										</div>
-									</div>
-									<div class="content-button mt-5">
-										  <button type="button" class="btn btn-button">Email</button>
-										  <button type="button" class="btn btn-button">Communication</button>
-									</div>
-									</div>
-								</div>
-								</div>
-							</div>
-					</div>
-				</div>
-			</div>
-				<span class="view">View All</span>
-				<h4 class="mt-5 pt-5 head-text">Available Micro APIS</h4>
-				<div class="row">
-					<div class="col-md-3 mt-3" >
-						<div class="card card-style">
-								<img class="mt-4" src="./assets/images/new_cloudinary_logo_square 1.png" alt="">
-							 <div class="card-body text-center">
-							    <h5 class="card-title heading">Cloudinary API</h5>
-							    <p class="card-text par-text">Description about the API</p>
-							    <a href="#" class="btn button">Add</a>
-							 </div>
-						</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card card-style">
-								<img class="mt-4" src="./assets/images/SG_Twilio_Lockup_Social.png" alt="">
-							 <div class="card-body text-center">
-							    <h5 class="card-title heading">SendGrid API</h5>
-							    <p class="card-text par-text">Description about the API</p>
-							    <a href="#" class="btn button">Add</a>
-							 </div>
-						</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card card-style">
-								<img class="mt-4" src="./assets/images/flutter_wave 1.png" alt="">
-							 <div class="card-body text-center">
-							    <h5 class="card-title heading">Flutterwave API</h5>
-							    <p class="card-text par-text">Description about the API</p>
-							    <a href="#" class="btn button">Add</a>
-							 </div>
-						</div>
-					</div>
-					<div class="col-md-3 mt-3" >
-						<div class="card card-style">
-								<img class="mt-4" src="./assets/images/image 1.png" alt="">
-							 <div class="card-body text-center">
-							    <h5 class="card-title heading">Cloudinary API</h5>
-							    <p class="card-text par-text">Description about the API</p>
-							    <a href="#" class="btn button">Add</a>
-							 </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="w-100 nav-fill navbar-nav mr-auto d-flex flex-column flex-md-row justify-content-between">
+                    <li class="nav-item active">
+                        <a class="nav-link text-color" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-color" href="#">Configured API list</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #31aa52;">
+                            A. Ifediora
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #16172D;">
+                            <a class="dropdown-item text-center text-color" href="#">Action</a>
+                            <a class="dropdown-item text-center text-color" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-center text-color" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid m-0 py-3" style="background-color: #f5f7f6;">
+        <div
+            class="container-fluid px-0 d-flex flex-column-reverse flex-md-row justify-content-between align-items-center">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" id="services-tab" data-toggle="tab" href="#services" role="tab"
+                        aria-controls="services" aria-selected="true">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" id="settings-tab" data-toggle="tab" href="#settings" role="tab"
+                        aria-controls="settings" aria-selected="false">Settings</a>
+                </li>
+            </ul>
+            <div class="col-12 col-md-3">
+                <form class=" search form-inline my-2 my-lg-0 mx-auto" id="search">
+                    <div
+                        class="form-group w-100 d-flex flex-row justify-content-between align-items-center mx-auto text-success rounded">
+                        <input class="search__input form-control col-10 py-1 border-0 bg-transparent" type="search"
+                            placeholder="Search APIs" aria-label="Search">
+                        <button class="search__btn btn col-2 my-sm-0" type="submit text-success">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active py-5" id="services" role="tabpanel"
+                aria-labelledby="services-tab">
+                <div class="container-fluid">
+                    <h2 class="d-flex justify-content-start">YOUR APIS</h2>
+                </div>
+                <section class="d-flex flex-wrap">
+                    <div class="api py-5 px-3 d-flex flex-column justify-content-center align-items-center bg-white rounded shadow"
+                        id="add">
+                        <div class="text-dark">
+                            <i class="fa fa-plus fa-5x"></i>
+                        </div>
 
-	  </div>
-	  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"></div>
-	  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
-	</div>
-	
-	
-    <!-- All javascript at the bottom of the page for fast page load -->
-   <!-- JS, Popper.js, and jQuery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                        <div class="api__tags text-right mt-3" style="max-width:290px;">
+                            <p class="api__title">Add More APIs</p>
+                        </div>
+                    </div>
+                    <div class="api py-5 px-3 d-flex flex-column align-items-center bg-white rounded shadow">
+                        <div class="api__desc d-flex flex-row justify-content-between" style="max-width:290px;">
+                            <div class="mr-3">
+                                <img src="assets/img/key.svg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="api__title">Authentication API</p>
+                                <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                            </div>
+                        </div>
+                        <div class="api__setting text-right" style="max-width:290px;">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                            <a href="" class=" ml-5">
+                                <img src="assets/img/settings.png" alt="">
+                            </a>
+                        </div>
+                        <div class="api__tags text-right mt-3" style="max-width:290px;">
+                            <li class="api__list list-inline-item py-1 px-3">Web</li>
+                            <li class="api__list list-inline-item p-1 px-3">Security</li>
+                        </div>
+                    </div>
+                    <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                        <div class="api__desc d-flex flex-row justify-content-between" style="max-width:290px;">
+                            <div class="mr-3">
+                                <img src="assets/img/email.svg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="api__title">Email API</p>
+                                <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                            </div>
+                        </div>
+                        <div class="api__setting text-right">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                            <a href="" class=" ml-5">
+                                <img src="assets/img/settings.png" alt="">
+                            </a>
+                        </div>
+                        <div class="api__tags text-right mt-3">
+                            <li class="api__list list-inline-item py-1 px-3">Tools</li>
+                            <li class="api__list list-inline-item p-1 px-3">Communication</li>
+                        </div>
+                    </div>
+                    <div class="api py-5 px-3 d-flex flex-column bg-white rounded shadow">
+                        <div class="api__desc d-flex flex-row justify-content-between" style="max-width:290px;">
+                            <div class="mr-3">
+                                <img src="assets/img/excel.svg" alt="">
+                            </div>
+                            <div class="">
+                                <p class="api__title">Excel API</p>
+                                <p class="api__text">Configure API Keys, Secrets and other details.</p>
+                            </div>
+                        </div>
+                        <div class="api__setting text-right">
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="dark">
+                            <a href="" class=" ml-5">
+                                <img src="assets/img/settings.png" alt="">
+                            </a>
+                        </div>
+                        <div class="api__tags text-right mt-3">
+                            <li class="api__list list-inline-item py-1 px-3">Email</li>
+                            <li class="api__list list-inline-item p-1 px-3">Utilities</li>
+                        </div>
+                    </div>
+                    
+            </section>
+            <div style="float: right;">
+                <h5 style="font-weight: bold; color: #31AA52; font-style: italic;">View All >>></h5>
+            </div>
+            <div class="container-fluid mt-5 pt-5">
+                    <h2 class="d-flex justify-content-start">Available microAPIS</h2>
+            </div>
+            <section class="d-flex flex-wrap mb-5">
+                <div class="api py-5 px-3 d-flex flex-column justify-content-center align-items-center bg-white rounded shadow"
+                        id="add">
+                    <div class="">
+                        <img src="assets/img/new_cloudinary_logo_square 1.png" alt="new_cloudinary_logo_square 1">
+                    </div>
+
+                    <div class="api__tags text-right mt-3" style="max-width:290px;">
+                        <h3 class="">Cloudinary API</h3>
+                         <p class="">Description about the API</p>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-success" style="width: 100px;">Add</button>
+                    </div>
+                </div>
+                 <div class="api py-5 px-3 d-flex flex-column justify-content-center align-items-center bg-white rounded shadow"
+                        id="add">
+                    <div class="">
+                        <img src="assets/img/SG_Twilio_Lockup_Social.png" alt="SG_Twilio_Lockup_Social">
+                    </div>
+
+                   <div class="api__tags text-right mt-3" style="max-width:290px;">
+                        <h3 class="">SendGrid API</h3>
+                         <p class="">Description about the API</p>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-success" style="width: 100px;">Add</button>
+                    </div>
+                        
+                </div>
+                 <div class="api py-5 px-3 d-flex flex-column justify-content-center align-items-center bg-white rounded shadow"
+                        id="add">
+                    <div class="">
+                        <img src="assets/img/flutter_wave 1.png" alt="flutter_wave 1">
+                    </div>
+
+                    <div class="api__tags text-right mt-3" style="max-width:290px;">
+                        <h3 class="">Flutterwave API</h3>
+                         <p class="">Description about the API</p>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-success" style="width: 100px;">Add</button>
+                    </div>
+                </div>
+                 <div class="api py-5 px-3 d-flex flex-column justify-content-center align-items-center bg-white rounded shadow"
+                        id="add">
+                    <div class="">
+                        <img src="assets/img/image 1.png" alt="image ">
+                    </div>
+
+                   <div class="api__tags text-right mt-3" style="max-width:290px;">
+                        <h3 class="">Paystack API</h3>
+                         <p class="">Description about the API</p>
+                    </div>
+                    <div class="">
+                        <button class="btn btn-success" style="width: 100px;">Add</button>
+                    </div>
+                </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+
+                <!-- Settings API list goes here -->
+                <div class="pt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-</html>
+<script src="assets/jquery/jquery-3.5.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/font awsome/js/all.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
+</html>
