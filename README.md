@@ -10,7 +10,7 @@
 -   [Links :link:](#links-link)
 
 ## Overview :notebook_with_decorative_cover: 
-This is a the microdev.api website designed by Team-Incredibles. Currently under constructuin by Team-Microapi
+This is a the microdev.api website designed by Team-Incredibles. Currently under construction by Team-Microapi
 
 ## Installation and running server :gear:
 * Clone the repo to your local machine using your _terminal_ or _command prompt_, and afterwards, navigate into the root folder  
@@ -48,10 +48,10 @@ The test is targeted at the _./test/unit/**_ folder
 
 ```
     Test the login page
-        Test to cheeck if email and password exists
+        Test to check if email and password exists
             Signing in with a verified email and password
                 ✓ should respond 200
-            Signing in with an unerified email and password
+            Signing in with an unverified email and password
             ✓ should respond with 404
 ``` 
 
@@ -70,7 +70,7 @@ The test is targeted at the _./test/unit/**_ folder
       ✓ should return true if password and 
         confirmpassword don't match
       
-    Test to check if password fiels is not empty
+    Test to check if password field is not empty
       ✓ verify if it sends an error message if 
         password field is empty
 
