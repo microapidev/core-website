@@ -1,18 +1,18 @@
-# Team-Microapi
+# TEAM-MICROAPI
 
 ![Node.js CI](https://github.com/hngi/Team-Incredible-BE/workflows/Node.js%20CI/badge.svg?branch=develop)
 
--   ## Contribute 🕸 Clone the development branch and get to work
+-   ## CONTRIBUTE 🕸 CLONE THE DEVELOPMENT BRANCH AND GET TO WORK
 -   [Overview :notebook_with_decorative_cover:](#overview-notebook_with_decorative_cover)
 -   [Installation and running server (Development) :gear:](#installation-and-running-server-gear)
 -   [API :cloud_with_lightning:](#api-cloud_with_lightning)
 -   [Docker(Production) :eight_spoked_asterisk:](#docker-eight_spoked_asterisk)
 -   [Links :link:](#links-link)
 
-## Overview :notebook_with_decorative_cover: 
+## OVERVIEW :NOTEBOOK_WITH_DECORATIVE_COVER: 
 This is a the microdev.api website designed by Team-Incredibles. Currently under constructuin by Team-Microapi
 
-## Installation and running server :gear:
+## INSTALLATION AND RUNNING SERVER : GEAR :
 * Clone the repo to your local machine using your _terminal_ or _command prompt_, and afterwards, navigate into the root folder  
 ```shell script
 $ cd microapi-main-website
@@ -31,7 +31,7 @@ Listening on port 3000
 
 point your browser to ```localhost:3000```
 
-## API :cloud_with_lightning: 
+## API :CLOUD_WITH_LIGHTINIG: 
 Two API's were consumed for the development of this project
 * Login API
 * Registration API  
@@ -42,9 +42,9 @@ yarn test
 ```
 The test is targeted at the _./test/unit/**_ folder
 
-##### Test written  :bulb:
+##### TEST WRITTEN  :bulb:
 
-**Login**  :key:
+**LOGIN**  :key:
 
 ```
     Test the login page
@@ -55,7 +55,7 @@ The test is targeted at the _./test/unit/**_ folder
             ✓ should respond with 404
 ``` 
 
-**Signup** :door:
+**SIGNUP** :door:
 
 ```
   Test the signup page
@@ -89,7 +89,7 @@ The test is targeted at the _./test/unit/**_ folder
 
 
 
-##  Docker :eight_spoked_asterisk:  
+##  DOCKER :EIGHT_SPOKED_ASTERISK:  
 So, the server is running on a linux os, and containerized with docker.  
 The following steps needs to be taken  
 
@@ -113,7 +113,7 @@ The following steps needs to be taken
 ```$ ./run_docker.sh```
 
 
-## Links :link:
+## LINKS : LINK :
 
 * Visit us at <a href="https://microapi.dev/" target="_blank">Microapi</a>
 * <a href="https://www.nginx.com/resources/wiki/start/topics/examples/full/" target="_blank">How to write an Nginx config file</a>
@@ -121,5 +121,5 @@ The following steps needs to be taken
 * <a href="https://mochajs.org/" target="_blank">Writing tests with Mocha</a>
 
 
-### Contributors :book:
-* **Team-Incredible, Team-Microapi** :nerd_face:
+### CONTRIBUTORS : BOOK :
+* **TEAM-INCREDIBLE, TEAM-MICROAPI** :nerd_face:
