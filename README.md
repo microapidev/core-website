@@ -55,7 +55,7 @@ The test is targeted at the _./test/unit/**_ folder
             ✓ should respond with 404
 ``` 
 
-**SIGNUP** :welcome:
+**SIGNUP** :door:
 
 ```
   Test the signup page
