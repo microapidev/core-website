@@ -51,7 +51,7 @@ The test is targeted at the _./test/unit/**_ folder
         Test to cheeck if email and password exists
             Signing in with a verified email and password
                 ✓ should respond 200
-            Signing in with an unerified email and password
+            Signing in with an unverified email and password
             ✓ should respond with 404
 ``` 
 
@@ -64,13 +64,13 @@ The test is targeted at the _./test/unit/**_ folder
       ✓ verify if it sends an error message if 
         all fields are empty
 
-    Test to check if password mactch
+    Test to check if password match
       ✓ should return false if password and 
         confirmpassword don't match
       ✓ should return true if password and 
         confirmpassword don't match
       
-    Test to check if password fiels is not empty
+    Test to check if password fields is not empty
       ✓ verify if it sends an error message if 
         password field is empty
 
