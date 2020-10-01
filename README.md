@@ -2,7 +2,7 @@
 
 ![Node.js CI](https://github.com/hngi/Team-Incredible-BE/workflows/Node.js%20CI/badge.svg?branch=develop)
 
--   ## CONTRIBUTE 🕸 Clone the development branch and get to work
+-   ## CONTRIBUTE 🕸 CLONE THE DEVELOPMENT BRANCH AND GET TO WORK
 -   [Overview :notebook_with_decorative_cover:](#overview-notebook_with_decorative_cover)
 -   [Installation and running server (Development) :gear:](#installation-and-running-server-gear)
 -   [API :cloud_with_lightning:](#api-cloud_with_lightning)
@@ -44,7 +44,7 @@ The test is targeted at the _./test/unit/**_ folder
 
 ##### TEST WRITTEN  :bulb:
 
-**Login**  :key:
+**LOGIN**  :key:
 
 ```
     Test the login page
@@ -55,7 +55,7 @@ The test is targeted at the _./test/unit/**_ folder
             ✓ should respond with 404
 ``` 
 
-**Signup** :door:
+**SIGNUP** :welcome:
 
 ```
   Test the signup page
