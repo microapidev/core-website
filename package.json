@@ -27,7 +27,7 @@
     "jsonwebtoken": "^8.5.1",
     "mocha": "^7.2.0",
     "mongoose": "^5.9.20",
-    "nodemailer": "^6.4.8",
+    "nodemailer": "^6.4.16",
     "nodemailer-mailgun-transport": "^2.0.0",
     "password-validator": "^5.0.3",
     "request": "^2.88.2",
