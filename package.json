@@ -25,7 +25,7 @@
     "fs": "0.0.1-security",
     "joi-phone-number": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
-    "mocha": "^7.2.0",
+    "mocha": "^10.2.0",
     "mongoose": "^5.9.20",
     "nodemailer": "^6.4.8",
     "nodemailer-mailgun-transport": "^2.0.0",
